@@ -98,8 +98,6 @@ df = df[df.columns.drop(list(df.filter(regex='0.50 - 0.99')))]
 df = df[df.columns.drop(list(df.filter(regex='Min Played')))]
 df = df[df.columns.drop(list(df.filter(regex='Total accelerations')))]
 
-df.head()
-
 # Normalize
 x = df.values
 min_max_scaler = preprocessing.MinMaxScaler()
@@ -111,6 +109,13 @@ df = pd.DataFrame(x_scaled)
 
 # Save changes in new csv to view later
 df.to_csv("altered_total.csv")
+
+# Box plots for data columns
+fig7, ax7 = plt.subplots()
+ax7.set_title('Visualize Data Spread')
+ax7.boxplot(df[1:11])
+plt.savefig('boxplots.pdf')
+plt.close()
 
 # Reduce to two dimensions (uses data from every column, are they all really needed / does this overfit???)
 pca = PCA(n_components=2)
@@ -175,7 +180,7 @@ col = assign_color(kmeans.labels_)
 for i in range(len(X)):
     plt.scatter(x[i], y[i], c=col[i], marker=markers[i], alpha=0.5)
     
-plt.savefig('cluster_plot.png')
+plt.savefig('cluster_plot.pdf')
 
 # Function to convert class to a numeric value - 0, 1, or 2
 def labels_to_numeric(labels, x, y, z):
