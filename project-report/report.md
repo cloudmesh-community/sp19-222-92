@@ -1,12 +1,30 @@
-# K-Means
+# Analysis of soccer data with kmeans :hand: hid-sp19-222-92 
 
-#
+| Gregor von Laszewski, Albert Zweistein
+| laszewski@gmail.com, zwei@example.edu
+| Indiana University, Example University
+| hid: fa18-523-000 fa18-523-001
+| github: [:cloud:](https://github.com/cloudmesh-community/proceedings-fa18/blob/master/project-report/report.md)
+| code: [:cloud:](https://github.com/cloudmesh-community/proceedings-fa18/blob/master/project-code)
+
+> If you do a project report only without any code, remove the line
+> with the code url link. Remove this line also ;-)
+
+---
+
+Keywords: kmeans, soccer, 
+
+---
+
+
+
+## K-Means
 
 Dataset and question:
 
 Can data gathered from athletic practices and games be used to create benchmarks for how an athlete playing a specific position should perform? Recent advancements in different technologies have allowed us to use data from sensors to instantly improve how people and things perform.  Edge computing was used on that data to showcase that data from athletes can help them improve just as well as it can help machines improve. With edge computing, one can get real-time results which can target specific data points from the measured data so that those who are interested can easily see what needs immediate attention for the athlete to improve. Practice and game data gotten from the Indiana University Women&#39;s Soccer team was used to see if athlete data could be used to show coaches and players if the players are playing at the level that they could playing at. The data from the Women&#39;s team has some individual columns, such as sprints, that could be used to show the athletes and coaches what they need to improve on without having to make any computations on that data point. Although using data in that way can help the player improve their speed, it will do very little to show them how they need to improve their overall ability. The main point of the data is to improve the player at their specific sport, not just how fast they can run. Using certain algorithms such as Kmeans on the data can show the player what they need to do to better their game as a whole because it can be graphed and used to compare themselves against others who play the position better. This method can sometimes be inefficient because what is &quot;good&quot; can very a lot in soccer.  For example, some defenders do not run very much at all, but instead rely on their ability to read players movements to stop the opposing players from getting past them. This would be a great data point that likely be used to create more accurate models that can help the players distinguish themselves from the other positions in terms of how they should be performing, but the problem is that this type of ability cannot be measured. A big downfall of edge computing when it comes to helping athletes improve is that many things which make some athletes great are skills which are not yet able to be detected by any sort of sensory technology. To avoid any of these limitations, the dataset attained from the Indiana University Women&#39;s Soccer team has many data points which are essentially the same except that they are measured in different ranges. This way of measuring data could surpass the inability to measure the &quot;intangibles&quot; because it measures many data points at the same instance. The game data that was gotten from the Women&#39;s team was gotten from the 2018 season where they faced off with many of the other Big 10 schools. There were eleven datasets in which each contained a row for each of the players where you could see their names and all of their data points for that particular game. Since each dataset had only 23 data points we decided to join all of the datasets into one big dataset where the player&#39;s names were removed and replaced by the indexes of the rows. The original datasets that were given to us did not contain the minutes played, which could alter how the kmeans algorithm clusters the players by their positions. The algorithm would likely cluster the players wrongly if the &quot;Minutes Played&quot; column was not added because it would give the players who are substitutes higher numbers without taking into account that the amount of time that they played. In soccer, the amount of time you play can especially effect many of your stats because the sport is largely based on endurance with a few short bursts of sprints.
 
-# Algorithm:
+## Algorithm:
 
 #
 
@@ -16,7 +34,7 @@ Before landing on K-means to be the machine learning algorithm, spectral cluster
 
 Dimension reduction was something that was needed for this data set because there were many points within one player&#39;s statistics. Having multiple points,  was too much for K-means to give explainable results. Dimension reduction allowed the data set to be reduced to a certain number of random variables by obtaining a set of key variables. Looking at dimension reduction from the math perspective there are the non-linear and linear methods.
 
-# Results
+## Results
 
 Normally a clustering model can&#39;t be &#39;scored&#39; for its accuracy; there are no true labels in unsupervised learning to compare with the clustering model&#39;s predicted labels. However, in our case each of the fitness data points had the player name associated with it, so we were able to replace each name in the dataset with their position on the field (the predicted value). Converting these positions to numeric representations gave us a list of true labels to use for scoring. We found each player&#39;s position by taking the position listed on the team&#39;s roster page. Of course, some players may play in different positions throughout the season, so some of the labels are most likely wrong. Our labelling process was the best we could do with the information available. We focused on three evaluations for our model: completeness, homogeneity, and v-measure. Completeness is a measure of how well each class was clustered together, while homogeneity scores the clusters based on what degree in contains only one class. The harmonic mean of the completeness and homogeneity scores gives the v-measure score. Each is considered &#39;perfect&#39; if their score is 1.0. Conversely, 0.0 is the worst possible score. Our clustering model had a completeness score of .260, homogeneity score of .227, and a v-measure score of .242. This means our model was more effective at clustering the classes together than having each cluster contain purely one class. Overall, the model scored poorly. Looking at the scatter plot showing the clusters and the data points true labels, we can see that the poor score can be mainly attributed to the general failure to classify forwards correctly. The defenders (dots) and midfielders (triangles) have fairly defined clusters themselves, and viewing the scatter plot without the any forward data points makes it even more apparent.  The leftmost cluster was split almost 50/50 between forwards and midfielders despite them being decently separated groups, mainly because the model identified the outliers of the dataset as the third cluster. It&#39;s possible that if the dataset was cleaned up by removing the outliers before clustering, the model would&#39;ve separated the classes much more accurately. Our method for removing the outliers could have involved calculating a Z-Score for each data point, which gives the amount of standard deviations a point is from the mean of the dataset, and then getting rid of points with a Z-Score above a certain amount of standard deviations. However, it&#39;s important to determine if the points in that top-right cluster would even qualify as true outliers or if they are just points the clustering model is unable to predict. We might need to investigate those points in the original dataset to see if there is a discernable pattern to them because theoretically, the data shouldn&#39;t have any anomalies unless the measuring device malfunctioned. It could even be a specific game that led to those points being separated; the game could&#39;ve been much more intense than normal, leading to higher numbers for each player that participated. Disregarding them just to improve the model&#39;s accuracy may not be the right choice.
 
