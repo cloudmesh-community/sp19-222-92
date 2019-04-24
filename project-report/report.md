@@ -1,9 +1,9 @@
 # Analysis of soccer data with kmeans :hand: hid-sp19-222-92 
 
-| Gregor von Laszewski, Albert Zweistein
-| laszewski@gmail.com, zwei@example.edu
+| Your Name, ANother Name, 
+| yourname@gmail.com, anothername@example.edu
 | Indiana University, Example University
-| hid: fa18-523-000 fa18-523-001
+| hid: sp19-222-92 sp19-222-##
 | github: [:cloud:](https://github.com/cloudmesh-community/proceedings-fa18/blob/master/project-report/report.md)
 | code: [:cloud:](https://github.com/cloudmesh-community/proceedings-fa18/blob/master/project-code)
 
