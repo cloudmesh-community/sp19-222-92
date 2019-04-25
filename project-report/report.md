@@ -7,7 +7,7 @@
 :wave: Overal you are well on your way but proof read proof read proof read! Careful when you copy and paste, avoid jargon be direct. 
 
 
-# Analysis of soccer data with kmeans :hand: hid-sp19-222-92 
+# Analysis of soccer data with kmeans hid-sp19-222-92 
 
 | Your Name, ANother Name, 
 | yourname@gmail.com, anothername@example.edu
