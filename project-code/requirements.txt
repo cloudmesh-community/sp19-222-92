@@ -3,5 +3,5 @@ sklearn
 matplotlib
 flask
 connexion[swagger-ui]
-request
+requests
 numpy
