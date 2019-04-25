@@ -30,6 +30,4 @@ WORKDIR project-code/
 
 EXPOSE 8080
 
---no-cache --pull
-
 CMD ["make", "start"]
