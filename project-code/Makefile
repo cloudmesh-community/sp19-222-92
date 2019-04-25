@@ -24,7 +24,6 @@ start:
 	@echo "starting the NEW service..."
 	pip install --upgrade pip
 	pip install -r requirements.txt
-	cd code
 	python service.py
 
 docker-stop:
