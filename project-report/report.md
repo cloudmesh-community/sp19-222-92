@@ -27,6 +27,8 @@ This paper needs an intro.
 
 :wave: Can discuss the explosion of sport driven data and give some examples.
 
+:wave: the first couple senetences in k-means parapgrph could be used in the intro 
+
 
 ## K-Means
 
