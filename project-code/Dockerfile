@@ -26,7 +26,7 @@ RUN pip install psutil
 
 RUN git clone https://github.com/cloudmesh-community/sp19-222-92.git
 
-WORKDIR project-code/
+WORKDIR sp19-222-92/project-code
 
 EXPOSE 8080
 
