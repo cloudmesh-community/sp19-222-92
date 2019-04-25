@@ -2,4 +2,6 @@ pandas
 sklearn
 matplotlib
 flask
-connexion
+connexion[swagger-ui]
+requests
+numpy
