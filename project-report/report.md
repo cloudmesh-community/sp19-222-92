@@ -10,7 +10,7 @@
 # Analysis of soccer data with kmeans hid-sp19-222-92 
 
 | Jesus Badillo, Xandria McDowell, Ben Yeagley 
-| yourname@gmail.com, xmcdowel@iu.edu,
+| jebadi@iu.edu, xmcdowel@iu.edu, addyouremailBen@gamil.com
 | Indiana University, Example University
 | hid: sp19-222-92 sp19-222-##
 | github: [:cloud:](https://github.com/cloudmesh-community/proceedings-fa18/blob/master/project-report/report.md)
