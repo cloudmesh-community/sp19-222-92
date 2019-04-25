@@ -40,7 +40,7 @@ This paper needs an intro.
 
 :wave: the first couple senetences in k-means parapgrph could be used in the intro 
 
-## Soccor Dataset 
+## Soccer Dataset 
 
 
 ## K-Means (hack this up into the above three paragrpahs)
@@ -110,6 +110,8 @@ Normally a clustering model cannot be scored for its accuracy; there are no true
 | 0.260        | 0.227       | 0.242   |
 
 :warning: please do not copy and paste from word or anything microsoft it bring in garbage please proof read and remove things like this &#39;accuracy&#39; isn&#39;t. I have deleted several of them but several still persist. 
+
+:wave: use boxplots to discuss outliers they are easy and get the job done. 
 
 :wave: avoid terms like left, right, above and below, we should represent the figures directly.
 
