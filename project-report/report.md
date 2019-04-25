@@ -6,12 +6,6 @@
 
 :wave: Overal you are well on your way but proof read proof read proof read! Careful when you copy and paste, avoid jargon be direct. 
 
-<<<<<<< HEAD
-
-
-# Algorithm:
-=======
->>>>>>> eaece37bf807fa729c0b2939ddf1664639dd7303
 
 # Analysis of soccer data with kmeans hid-sp19-222-92 
 
@@ -22,22 +16,6 @@
 | github: [:cloud:](https://github.com/cloudmesh-community/proceedings-fa18/blob/master/project-report/report.md)
 | code: [:cloud:](https://github.com/cloudmesh-community/proceedings-fa18/blob/master/project-code)
 
-<<<<<<< HEAD
-Before landing on K-means to be the machine learning algorithm, spectral clustering was the set machine learning algorithm for finding out how close people were playing against Indiana University women&#39;s soccer team. Spectral clustering is a popular machine learning algorithm used in recent years according to Von Luxburg, in A tutorial on spectral clustering. This algorithm can be effectively solved by using standard linear algebra methods and, software. For the most part, it is known to outperform K-means which is what was seen with this data set. Spectral clustering uses the data points as nodes of a graphed, which is then treated partitioning problem and mapped to a low-dimensional space making it easier to form clusters. Spectral clustering follows an approach where if the points are extremely close to each other they are put into the same cluster, even if the distance between them is within a 2 point range if they are not connected they are not clustered. While k-means points can be within the same range and still fall within the same group because it&#39;s measured by the distance between the data. This data set has many points where they are considered within range of each other which is why spectral clustering gave better results. In spectral clustering the data had to be connected within a way which led them to fall within the same cluster.  The problem arises when using spectral clustering because the project aims to show people how they played compared to Indiana University soccer players it but when trying to show their data and the soccer players data on the same plot issues arise. This happens because you can not get the labels using spectral clusters so the use would not know where they where.
-
-Dimension reduction was something that was needed for this data set because there were many points within one player&#39;s statistics. Having multiple points,  was too much for K-means to give explainable results. Dimension reduction allowed the data set to be reduced to a certain number of random variables by obtaining a set of key variables. Looking at dimension reduction from the math perspective there are the non-linear and linear methods. The linear methods take the k\&lt;= p components of the new
-
-
-=======
-> If you do a project report only without any code, remove the line
-> with the code url link. Remove this line also ;-)
-
----
->>>>>>> eaece37bf807fa729c0b2939ddf1664639dd7303
-
-Keywords: kmeans, soccer, 
-
----
 ## Abstract 
 
 Type abstract here. 
