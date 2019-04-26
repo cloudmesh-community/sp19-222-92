@@ -1,4 +1,5 @@
 :smiley: should you should me how to put equation. Can you use the following cite  https://home.deib.polimi.it/matteucc/Clustering/tutorial_html/kmeans.html for the kmeans euquation
+
 :warning: in review
 
 :warning: fix copy paste errors. 
