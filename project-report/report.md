@@ -1,10 +1,14 @@
-:smiley: should you should me how to put equation. Can you use the following cite  https://home.deib.polimi.it/matteucc/Clustering/tutorial_html/kmeans.html for the kmeans euquation
-
-<https://en.wikibooks.org/wiki/LaTeX/Mathematics>
-
 :warning: in review
 
 :warning: fix copy paste errors. 
+
+:smiley: should you should me how to put equation. Can you use the following cite  https://home.deib.polimi.it/matteucc/Clustering/tutorial_html/kmeans.html for the kmeans euquation
+
+:smiley: Done! below is a link with helpful syntax. I will update procedding shortly and 
+you will be able to see how this is rendered in the epub. 
+
+<https://en.wikibooks.org/wiki/LaTeX/Mathematics>
+
 
 :wave: add your images and references 
 
