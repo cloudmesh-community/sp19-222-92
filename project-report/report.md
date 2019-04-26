@@ -1,6 +1,6 @@
 :smiley: should you should me how to put equation. Can you use the following cite  https://home.deib.polimi.it/matteucc/Clustering/tutorial_html/kmeans.html for the kmeans euquation
 
-${\sum{_j=1}{^k}{\sum{_i=1}{^n}}\|x_i^(j) - c_j \|^2$
+$\sum_j=1^k\sum_i=1^n\|x_i^(j) - c_j \|^2$
 
 <https://en.wikibooks.org/wiki/LaTeX/Mathematics>
 
