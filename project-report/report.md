@@ -1,3 +1,5 @@
+# Analysis of soccer data with kmeans
+
 :warning: in review
 
 :warning: fix copy paste errors. 
@@ -14,15 +16,13 @@ you will be able to see how this is rendered in the epub.
 
 :wave: Overal you are well on your way but proof read proof read proof read! Careful when you copy and paste, avoid jargon be direct. 
 
-
-# Analysis of soccer data with kmeans hid-sp19-222-92 
-
 | Jesus Badillo, Xandria McDowell, Ben Yeagley 
 | jebadi@iu.edu, xmcdowel@iu.edu, addyouremailBen@gamil.com
 | Indiana University, Example University
-| hid: sp19-222-92 sp19-222-##
-| github: [:cloud:](https://github.com/cloudmesh-community/proceedings-fa18/blob/master/project-report/report.md)
-| code: [:cloud:](https://github.com/cloudmesh-community/proceedings-fa18/blob/master/project-code)
+| hid: sp19-222-92 sp19-222-:wave: sp19-222-:wave: 
+| github: [:cloud:](https://github.com/cloudmesh-community/sp19-222-92/blob/master/project-report/report.md)
+| code: [:cloud:](https://github.com/cloudmesh-community/sp19-222-92/tree/master/project-code)
+
 
 ## Abstract 
 
