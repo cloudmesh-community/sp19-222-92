@@ -86,17 +86,27 @@ to really set up the problem statement.
 
 ### K-means
 
-K-Means is an unsupervised machine learning algorithm that takes an unlabeled dataset and finds groups within data without defined categories. The idea is to look at the average or mean values that can be clustered and how many groups of k that are related in some way. When using this algorithm, the hope is that the results can explain why common parameter values are in the same group. This algorithm takes numerical values that describe a coordinated value within a data set. For example, K-Means is beneficial for this project because is able to focus on a particular data set for the womens soccer team at Indiana University-Bloomington and compare that to users data. For the coordinates, K-Means can represent and describe many different things such as elections, medical test, sports teams, or wine data. Typical you use K-means on a dataset to get the model of the data, this is used to see the behaviors and analyze the patterns the data set. When using clustering methods variance becomes an important topic trying to understand the math behind this algorithm. Variance is a measurement of how far data values are from the mean. By look at the variance equation, it shows that it is a measure of the square difference between the data points and the mean value and then the average. When using the K-means algorithm one of the key points is to measure the closeness of the data to its average which led into cluster variance which divides the data into clusters, each will have its own average.
-
-:wave: how does kmeans cluster? what is unlabeled data? what is unsupeervised learning?
-
-:wave: I am not sure what you are saying here 'This algorithm takes numerical values that describe a coordinated value within a data set.'
-
-:wave: be consistant 'Indiana University-Bloomington'
-
-:wave: 'For the coordinates, K-Means can represent and describe many different things such as elections, medical test, sports teams, or wine data.' what do coordinates have to do with this?
-
-:wave: does kmeans give you optimal clusters or a model? What is the difference between classification and regression?
+K-Means is an unsupervised machine learning algorithm that takes an unlabeled dataset and finds groups within data without defined 
+categories. Unsupervised is learning from data that are unlabeled meaning you don’t know what the values of the output data might be. 
+The idea is to look at the average or mean values that can be clustered and how they can be related to the k groups. K is also known as 
+centroids which is a data point at the center of each cluster. Each cluster is placed in a certain position because depending on how 
+close the clusters are to each other will change the results. Which is why the placement of the cluster are important because the layout 
+of centroids will determine the results. In K-Means the centroids are randomly selected and then used as the cluster of each point. 
+After the centroid is placed then all the data point is split up into the correct centroids based on the data point that they are. Now 
+that the data points have a home the next step is re-calculation of k to optimize the position of the centroid. This process of 
+optimization continues to happen until centroids have stabilized or a certain number of iterations have occurred. When using this 
+algorithm, the hope is that the results can explain why common parameter values are in the same group. This algorithm takes numerical 
+values or data points that describe a coordinated value within a data set and cluster them according to the given k. For example, K-
+Means is beneficial for this project because is able to focus on a particular data set for the women's soccer team at Indiana University 
+(IU) and compare that to users data. K-Means coordinates can represent and describe many different things such as elections, medical 
+test, sports teams, or wine data. Typical you use K-means on a dataset to get the model of the data, this is used to see the behaviors 
+and analyze the patterns the data set. When using clustering methods variance becomes an important topic trying to understand the math 
+behind this algorithm. Variance is a measurement of how far data values are from the mean. By look at the variance equation, it shows 
+that it is a measure of the square difference between the data points and the mean value and then the average. When using the K-means 
+algorithm one of the key points is to measure the closeness of the data to its average which led into cluster variance which divides the 
+data into clusters, each will have its own average. While there are many different machine learning algorithms K-Means worked best 
+because it takes a unsupervised data set which was need to in this case. While K-Means gives an optimal cluster model, spectral cluster 
+is better.
 
 ### Spectral Clustering
 
