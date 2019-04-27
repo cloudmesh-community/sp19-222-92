@@ -16,6 +16,8 @@ you will be able to see how this is rendered in the epub.
 
 :wave: Overal you are well on your way but proof read proof read proof read! Careful when you copy and paste, avoid jargon be direct. 
 
+:o: basepath in yaml file not in cloudmesh domain, also project x is not a semantically meaningful name for a service
+
 | Jesus Badillo, Xandria McDowell, Ben Yeagley 
 | jebadi@iu.edu, xmcdowel@iu.edu, addyouremailBen@gamil.com
 | Indiana University, Example University
