@@ -19,7 +19,7 @@ you will be able to see how this is rendered in the epub.
 :o: basepath in yaml file not in cloudmesh domain, also project x is not a semantically meaningful name for a service
 
 | Jesus Badillo, Xandria McDowell, Ben Yeagley 
-| jebadi@iu.edu, xmcdowel@iu.edu, addyouremailBen@gamil.com
+| jebadi@iu.edu, xmcdowel@iu.edu, byeagley@indiana.edu
 | Indiana University, Example University
 | hid: sp19-222-92 sp19-222-:wave: sp19-222-:wave: 
 | github: [:cloud:](https://github.com/cloudmesh-community/sp19-222-92/blob/master/project-report/report.md)
