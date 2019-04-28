@@ -182,6 +182,15 @@ clustering (or poor clustering in our case) means our dataset couldn't fully dif
 aspect sorely needed to further separate the classes would be GPS data to find the average location on the field for each player, or a 
 heat map of their movement throughout the game.
 
+| Machine Learning Method      | Accuracy (training) | Accuracy (testing) |
+|------------------------------|---------------------|--------------------|
+| Logistic Regression          | .63                 | .60                |
+| Decision Tree                | .80                 | .65                |
+| K-Nearest Neighbors          | .76                 | .74                |
+| Linear Discriminant Analysis | .69                 | .60                |
+| Gaussian Naive Bayes         | .73                 | .63                |
+| SVM                          | .58                 | .63                |
+
 :wave: maybe a table to summarize these results
 
 ## Specification
