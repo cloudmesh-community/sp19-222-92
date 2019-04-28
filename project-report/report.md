@@ -123,9 +123,9 @@ the data points falling within the same cluster. The problem arises when using s
 people how they played compared to Indiana University soccer players but when trying to show their data and the soccer players data on 
 the same plot issues arise. This happens because you can not get the labels using spectral clusters so the use would not know where they 
 where.
+spectral equation below
+                                    = \left(\frac{1}{2}\right) \displaystyle\sum_{i, j=1}^{n} w_ij(f_i - f_j)^2
 
-
-:wave: maybe a few equations would be useful for this description. 
 
 ### Dimensional Reduction 
 
