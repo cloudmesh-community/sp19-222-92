@@ -159,7 +159,7 @@ Normally a clustering model cannot be scored for its accuracy; there are no true
 A necessary question to ask is: is the low v-measure score of the model due to possible errors in the dataset like those discussed 
 above, an incorrect choice of machine learning method, a general unpredictability of player position with the type of data given, or 
 some other reason? To examine the second possibility (wrong method), we split up the data into training and testing using 
-**train\_test\_split** from sklearn, and then we added a variety of other classification techniques to the project code. The first 
+train_test_split from sklearn, and then we added a variety of other classification techniques to the project code. The first 
 technique was Multinomial Logistic Regression, a method that uses a linear combination of the predictor variables to model the dependent 
 variable (position). The model had an accuracy score of .63 for our training data and .60 for our test data. The next technique we 
 employed was a Decision Tree Classifier, which handles multi-class predictions naturally. Decision trees use the observed variables from 
@@ -173,12 +173,12 @@ data and .60 for the test data. We also had a Gaussian Naïve Bayes classifier d
 that can be considered independent, but it still serves the purpose of comparison to the clustering model. Its accuracy score was .73 
 for the training data and .63 for the test data. Finally, we had an SVM classifier added to our project code, another method better 
 suited for just two classes but used anyway. Our SVM model had an accuracy score of .58 for the training data and .63 for the test data. 
-Overall, the highest scoring model for the test data was K-Nearest Neighbors, yet its .67 score for the test data still was not very 
+Overall, the highest scoring model for the test data was K-Nearest Neighbors, yet its .74 score for the test data still was not very 
 high. It is difficult to make a direct comparison between the k-NN model and our original clustering model for multiple reasons. Their 
-scores don&#39;t really represent the same idea, as &#39;accuracy&#39; isn&#39;t well defined when it comes to clustering. Clustering is 
-more generic than k-NN classification too, because its goal isn&#39;t to predict classes for each individual data point. Instead, the 
+scores don't really represent the same idea, as accuracy isn't well defined when it comes to clustering. Clustering is 
+more generic than k-NN classification too, because its goal isn't to predict classes for each individual data point. Instead, the 
 goal of clustering is to group the data into distinct sets and see how these sets align with real-world observation and truth. Failed 
-clustering (or poor clustering in our case) means our dataset couldn&#39;t fully differentiate positions with the variables measured. An 
+clustering (or poor clustering in our case) means our dataset couldn't fully differentiate positions with the variables measured. An 
 aspect sorely needed to further separate the classes would be GPS data to find the average location on the field for each player, or a 
 heat map of their movement throughout the game.
 
