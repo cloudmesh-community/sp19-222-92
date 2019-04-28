@@ -109,12 +109,23 @@ is better.
                                       $\sum_{j=1}^k\sum_{i=1}^n{\|x_{i}^{(j)} - c_j \|}^2$
 ### Spectral Clustering
 
-Before landing on K-means to be the machine learning algorithm, spectral clustering was the set machine learning algorithm for finding out how close people were playing against Indiana University womens soccer team. Spectral clustering is a popular machine learning algorithm used in recent years according to Von Luxburg (2007) in his article A tutorial on spectral clustering. This algorithm can be effectively solved by using standard linear algebra methods and, software. For the most part, it is known to outperform K-means which is what was seen with this data set. Spectral clustering uses the data points as nodes of a graph, which is then treated partitioning problem and mapped to a low-dimensional space making it easier to form clusters. Spectral clustering follows an approach where if the points are extremely close to each other they are put into the same cluster, even if the distance between them is within a two point range if they are not connected they are not clustered. While k-means points can be within the same range and still fall within the same group because it is measured by the distance between the data. This data set has many points where they are considered within range of each other which is why spectral clustering gave better results. In spectral clustering the data is connected within a way that leds to the data points falling within the same cluster. The problem arises when using spectral clustering because the project aims to show people how they played compared to Indiana University soccer players but when trying to show their data and the soccer players data on the same plot issues arise. This happens because you can not get the labels using spectral clusters so the use would not know where they where.
+Before landing on K-means to be the machine learning algorithm, spectral clustering was the set machine learning algorithm for finding 
+out how close people were playing against Indiana University womens soccer team. Spectral clustering is a popular machine learning 
+algorithm used in recent years according to Von Luxburg (2007) in his article A tutorial on spectral clustering. This algorithm can be 
+effectively solved by using standard linear algebra methods and, software. For the most part, it is known to outperform K-means which is 
+what was seen with this data set. Spectral clustering uses the data points as nodes of a graph, which are then treated as partitioning 
+points and mapped to a low-dimensional space making it easier to form clusters. Spectral clustering follows an approach where if the 
+points are extremely close to each other they are put into the same cluster, even if the distance between them is within a two point 
+range if they are not connected they are not clustered. While k-means points can be within the same range and still fall within the same 
+group because it is measured by the distance between the data. This data set has many points where they are considered within range of 
+each other which is why spectral clustering gave better results. In spectral clustering the data is connected within a way that leds to 
+the data points falling within the same cluster. The problem arises when using spectral clustering because the project aims to show 
+people how they played compared to Indiana University soccer players but when trying to show their data and the soccer players data on 
+the same plot issues arise. This happens because you can not get the labels using spectral clusters so the use would not know where they 
+where.
 
 
 :wave: maybe a few equations would be useful for this description. 
-
-:wave:  dont really follow this sentence...' Spectral clustering uses the data points as nodes of a graph, which is then treated partitioning problem and mapped to a low-dimensional space making it easier to form clusters.'
 
 ### Dimensional Reduction 
 
