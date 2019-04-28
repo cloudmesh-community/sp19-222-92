@@ -40,8 +40,10 @@ the given data to make improvements on the field.
 
 ## Introduction
 
+  Can data gathered from athletic practices and games be used to create benchmarks for how an athlete playing a specific position should perform? Recent advancements in different technologies have allowed us to use data from sensors to instantly improve how people and things perform. Athletic data 
 ### Sport Analytics 
 
+  The rapid innovation of technology has infiltrated many fields, including sports analytics because it has created more data which can show coaches what the players need to improve on. Edge computing is the technology that has led to the massive increase in more refined sports data because of its ability to provide a real-time numerical representation of what happened on the field. With this numerical data, immediate actions can be taken to rapidly improve each player specifically on the areas where they need it. Edge computing is computing that is done near the source of the data, and it is uses the cloud's ability to compute from a remote source to get instant data from a device. Edge-computing has allowed sensors to get more accurate real-time data which has given many sports a new way to get an advantage over their competitors.
 ### Sensors in Sports 
 
 This paper needs an intro.
