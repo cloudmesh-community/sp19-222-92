@@ -6,6 +6,8 @@
 
 :wave: there is no such thing as additional analysis, integrate it in your main paper, if your title does not fit, you need to adjust that
 
+:wave: This paper is very difficult to read due to its dense descriptions that do not explain things at times as easy as it could be. For example the explanation of tehe kmeans couold be simplified if you describe it in mathematical terms. But instead you do this at the end, confusing the reader
+
 :smiley: should you should me how to put equation. Can you use the following cite  <https://home.deib.polimi.it/matteucc/Clustering/tutorial_html/kmeans.html> for the kmeans euquation
 
 :smiley: Done! below is a link with helpful syntax. I will update procedding shortly and 
