@@ -4,6 +4,8 @@
 
 :warning: fix copy paste errors. 
 
+:wave: there is no such thing as additional analysis, integrate it in your main paper, if your title does not fit, you need to adjust that
+
 :smiley: should you should me how to put equation. Can you use the following cite  <https://home.deib.polimi.it/matteucc/Clustering/tutorial_html/kmeans.html> for the kmeans euquation
 
 :smiley: Done! below is a link with helpful syntax. I will update procedding shortly and 
