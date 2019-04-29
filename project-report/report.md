@@ -48,15 +48,59 @@ given data to make improvements on the field.
 
 ## Introduction
 
-  Can data gathered from athletic practices and games be used to create benchmarks for how an athlete playing a specific position should perform? Recent advancements in different technologies have allowed us to use data from sensors to instantly improve how machines and people perform. These advancements are now being used in sports to make computations to player data to get future insight on how to improve the overall team. For example, the NFL uses data from top NFL players to make Machine Learning algorithms that can see which college players compare to the top NFL players. This type of algorithm can show users what datapoints are shared by top players, so that coaches can pick their players accordingly. Soccer uses sports data to improve the physical attributes, such as stamina and pace, of each individual player since it is a more technical sport that cannot just use quantitative data to make decisions. The field of sports analytics have been changed by machine learning techniques that have been adapted to use the hard numerical data received from edge-computing devices to improve teams.
+  Can data gathered from athletic practices and games be used to
+  create benchmarks for how an athlete playing a specific position
+  should perform? Recent advancements in different technologies have
+  allowed us to use data from sensors to instantly improve how
+  machines and people perform. These advancements are now being used
+  in sports to make computations to player data to get future insight
+  on how to improve the overall team. For example, the NFL uses data
+  from top NFL players to make Machine Learning algorithms that can
+  see which college players compare to the top NFL players. This type
+  of algorithm can show users what datapoints are shared by top
+  players, so that coaches can pick their players accordingly. Soccer
+  uses sports data to improve the physical attributes, such as stamina
+  and pace, of each individual player since it is a more technical
+  sport that cannot just use quantitative data to make decisions. The
+  field of sports analytics have been changed by machine learning
+  techniques that have been adapted to use the hard numerical data
+  received from edge-computing devices to improve teams.
 
 ### Sport Analytics 
 
-  The rapid innovation of technology has infiltrated many fields including sports analytics because it has created more data which can show coaches what athletes need to improve on. Edge computing is the technology that has led to the massive increase in more refined sports data because of its ability to provide a real-time numerical representation of what happened on the field. With this numerical data, actions can be taken to rapidly improve each player specifically on the areas where they need immediate attention. Edge computing is computing that is done near the source of the data, and it uses the cloud's ability to compute from a remote source to get instant data from a device. Edge-computing has allowed sensors to get more accurate data without disturbing the players which has given many sports a new way to get an advantage over their competitors. 
+  The rapid innovation of technology has infiltrated many fields
+  including sports analytics because it has created more data which
+  can show coaches what athletes need to improve on. Edge computing is
+  the technology that has led to the massive increase in more refined
+  sports data because of its ability to provide a real-time numerical
+  representation of what happened on the field. With this numerical
+  data, actions can be taken to rapidly improve each player
+  specifically on the areas where they need immediate attention. Edge
+  computing is computing that is done near the source of the data, and
+  it uses the cloud's ability to compute from a remote source to get
+  instant data from a device. Edge-computing has allowed sensors to
+  get more accurate data without disturbing the players which has
+  given many sports a new way to get an advantage over their
+  competitors.
 
 ### Sensors in Sports 
 
-  Sensors have become more prominent in sports due to recent advancements in biomedical engineering which have made sensory technology better to create more informative data. These new innovations in sensory tech can now measure data points such as “temperature, oxygen saturation levels and heart rate (SpO2) through photo optic sensors in wearable rings and wrist devices”.  These new advancements are necessary because now, more than ever, “the differences between athletes are becoming more and more slight” which has led coaches and trainers to look to data analytics to get an advantage. By putting small sensors into players’ training equipment, we can detect important aspects of playing a sport such as muscle exertion, heart rate, and respiration. Sensors can provide immediate feedback to the athletes. For example, when attached to player attire, “accelerometers and conductive materials can measure posture and provide real-time feedback to athletes so they can perfect their form.”
+  Sensors have become more prominent in sports due to recent
+  advancements in biomedical engineering which have made sensory
+  technology better to create more informative data. These new
+  innovations in sensory tech can now measure data points such as
+  “temperature, oxygen saturation levels and heart rate (SpO2) through
+  photo optic sensors in wearable rings and wrist devices”.  These new
+  advancements are necessary because now, more than ever, “the
+  differences between athletes are becoming more and more slight”
+  which has led coaches and trainers to look to data analytics to get
+  an advantage. By putting small sensors into players’ training
+  equipment, we can detect important aspects of playing a sport such
+  as muscle exertion, heart rate, and respiration. Sensors can provide
+  immediate feedback to the athletes. For example, when attached to
+  player attire, “accelerometers and conductive materials can measure
+  posture and provide real-time feedback to athletes so they can
+  perfect their form.”
 
   Soccer has recently began to adopt the use of technology in many different ways such as the Adidas MiCoach ball, which is a regular sized soccer ball with a built in sensor that can detect the power, spin, and accuracy of a players kick. This ball allows players and coaches the to see how the athlete shoots the ball through an iOS or Android device to improve the players shooting form. This type of sensor is mainly used for beginners, professionals tend to focus on the more physical side of data collection such as wearable sensors that track physical stats. The Catapult Sports Playertek is a compression vest with a built-in sensor that has an accelerometer, magnometer, and a GPS that can track athletes' performance during practices. The IU Women's soccer team uses sensors like the Playertek to get athlete data because it allows the coaches to know what physical attributes to track for each player when they are training or playing.
 
