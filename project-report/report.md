@@ -304,6 +304,7 @@ scatter plot without the any forward data points makes it even more apparent.
 ![Clustering scatter plot](images/cluster_plot_no_forwards.png)
 
 The black cluster was split almost 50/50 between forwards and midfielders despite them being decently separated groups, mainly because the model identified the outliers of the dataset as the red cluster. It's possible that if the dataset was cleaned up by removing the outliers before clustering, the model would've separated the classes much more accurately. Outliers as defined by our boxplot are shown here: 
+
 ![Boxplot after normalization](images/boxplots.pdf)
 
 Our method for removing the outliers could have involved calculating a Z-Score
