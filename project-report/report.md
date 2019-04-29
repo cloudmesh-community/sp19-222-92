@@ -117,8 +117,8 @@ playing.
 
 ## Soccer Dataset 
 
-Practice and game data from the Indiana University Womens Soccer team
-was used in this analysis. The results of this analysis aim to
+Practice and game data from the IU Women's Soccer team
+was used in this analysis. The results of this analysis aims to
 leverage 'sensed' athlete data to show coaches and players if players
 are performing optimally. The Women's team data has 34 individual
 columns such as sprints, accelerations in varying ranges, and
@@ -172,18 +172,15 @@ it would give the players who are substitutes higher values without
 taking into accountthe amount of time that they played during a
 game. In soccer, the amount of time you play can especially effect
 many of your stats because the sport is largely based on endurance
-with a few short bursts of sprints. The "Class" data point is used as
-the labels to the Kmeans algorithm which is used to predict the
-outcome of each of the 170 rows' stats against the kmeans-computed
-stats. By using a prediction variable we have an insight as to where
-the kmeans-computed clusters should be centered at.
-
-:wave: 'those who are interested ' this should just be end users....avoid too much jargon . 
-
-:wave: again too much jargon in this phrase 'The data from the Womens team has some individual columns,' state directly what the data includes ie the data from the womens team has N predictor variables including sprints, etc etc, colleceted during the X minuted of practice at N minite intervals. 
-
-:wave: the last several sentences in this paragraph desceibe the dataset so lets make a parapgraph about the data set. 
-
+with a few short bursts of sprints. The substite players who had no
+game time were removed from the dataset because they could alter how
+the algorithm clusters a good stat vs. a bad stat. Once the extraneous
+data points were removed there were only 170 rows left which all had a
+label of either Mid-fielder, Forward, or Defender. The label was used as
+the prediction variable to give insight as to where the kmeans-computed 
+clusters should be centered. The Kmeans algorithm uses the labels to
+predict the outcome of each of the 170 rows' stats against the 
+kmeans-computed stats.
 
 ## Algorithm
 
