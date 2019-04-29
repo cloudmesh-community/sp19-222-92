@@ -46,124 +46,137 @@ data to make improvements on the field.
 
 ## Introduction
 
-  Can data gathered from athletic practices and games be used to create
-  benchmarks for how an athlete playing a specific position should perform?
-  Recent advancements in different technologies have allowed us to use data from
-  sensors to instantly improve how machines and people perform. These
-  advancements are now being used in sports to make computations to player data
-  to get future insight on how to improve the overall team. For example, the NFL
-  uses data from top NFL players to make Machine Learning algorithms that can
-  see which college players compare to the top NFL players. This type of
-  algorithm can show users what datapoints are shared by top players, so that
-  coaches can pick their players accordingly. Soccer uses sports data to improve
-  the physical attributes, such as stamina and pace, of each individual player
-  since it is a more technical sport that cannot just use quantitative data to
-  make decisions. The field of sports analytics have been changed by machine
-  learning techniques that have been adapted to use the hard numerical data
-  received from edge-computing devices to improve teams.
+Can data gathered from athletic practices and games be used to create
+benchmarks for how an athlete playing a specific position should
+perform?  Recent advancements in different technologies have allowed
+us to use data from sensors to instantly improve how machines and
+people perform. These advancements are now being used in sports to
+make computations to player data to get future insight on how to
+improve the overall team. For example, the NFL uses data from top NFL
+players to make Machine Learning algorithms that can see which college
+players compare to the top NFL players. This type of algorithm can
+show users what datapoints are shared by top players, so that coaches
+can pick their players accordingly. Soccer uses sports data to improve
+the physical attributes, such as stamina and pace, of each individual
+player since it is a more technical sport that cannot just use
+quantitative data to make decisions. The field of sports analytics
+have been changed by machine learning techniques that have been
+adapted to use the hard numerical data received from edge-computing
+devices to improve teams.
 
 ### Sport Analytics 
 
-  The rapid innovation of technology has infiltrated many fields including
-  sports analytics because it has created more data which can show coaches what
-  athletes need to improve on. Edge computing is the technology that has led to
-  the massive increase in more refined sports data because of its ability to
-  provide a real-time numerical representation of what happened on the
-  field. With this numerical data, actions can be taken to rapidly improve each
-  player specifically on the areas where they need immediate attention. Edge
-  computing is computing that is done near the source of the data, and it uses
-  the cloud's ability to compute from a remote source to get instant data from a
-  device. Edge-computing has allowed sensors to get more accurate data without
-  disturbing the players which has given many sports a new way to get an
-  advantage over their competitors.
+The rapid innovation of technology has infiltrated many fields
+including sports analytics because it has created more data which can
+show coaches what athletes need to improve on. Edge computing is the
+technology that has led to the massive increase in more refined sports
+data because of its ability to provide a real-time numerical
+representation of what happened on the field. With this numerical
+data, actions can be taken to rapidly improve each player specifically
+on the areas where they need immediate attention. Edge computing is
+computing that is done near the source of the data, and it uses the
+cloud's ability to compute from a remote source to get instant data
+from a device. Edge-computing has allowed sensors to get more accurate
+data without disturbing the players which has given many sports a new
+way to get an advantage over their competitors.
 
 ### Sensors in Sports 
 
-  Sensors have become more prominent in sports due to recent advancements in
-  biomedical engineering which have made sensory technology better to create
-  more informative data. These new innovations in sensory tech can now measure
-  data points such as “temperature, oxygen saturation levels and heart rate
-  (SpO2) through photo optic sensors in wearable rings and wrist devices”.
-  These new advancements are necessary because now, more than ever, “the
-  differences between athletes are becoming more and more slight” which has led
-  coaches and trainers to look to data analytics to get an advantage. By putting
-  small sensors into players’ training equipment, we can detect important
-  aspects of playing a sport such as muscle exertion, heart rate, and
-  respiration. Sensors can provide immediate feedback to the athletes. For
-  example, when attached to player attire, “accelerometers and conductive
-  materials can measure posture and provide real-time feedback to athletes so
-  they can perfect their form.”
+Sensors have become more prominent in sports due to recent
+advancements in biomedical engineering which have made sensory
+technology better to create more informative data. These new
+innovations in sensory tech can now measure data points such as
+“temperature, oxygen saturation levels and heart rate (SpO2) through
+photo optic sensors in wearable rings and wrist devices”.  These new
+advancements are necessary because now, more than ever, “the
+differences between athletes are becoming more and more slight” which
+has led coaches and trainers to look to data analytics to get an
+advantage. By putting small sensors into players’ training equipment,
+we can detect important aspects of playing a sport such as muscle
+exertion, heart rate, and respiration. Sensors can provide immediate
+feedback to the athletes. For example, when attached to player attire,
+“accelerometers and conductive materials can measure posture and
+provide real-time feedback to athletes so they can perfect their
+form.”
 
-  Soccer has recently began to adopt the use of technology in many different
-  ways such as the Adidas MiCoach ball, which is a regular sized soccer ball
-  with a built in sensor that can detect the power, spin, and accuracy of a
-  players kick. This ball allows players and coaches the to see how the athlete
-  shoots the ball through an iOS or Android device to improve the players
-  shooting form. This type of sensor is mainly used for beginners, professionals
-  tend to focus on the more physical side of data collection such as wearable
-  sensors that track physical stats. The Catapult Sports Playertek is a
-  compression vest with a built-in sensor that has an accelerometer, magnometer,
-  and a GPS that can track athletes' performance during practices. The IU
-  Women's soccer team uses sensors like the Playertek to get athlete data
-  because it allows the coaches to know what physical attributes to track for
-  each player when they are training or playing.
+Soccer has recently began to adopt the use of technology in many
+different ways such as the Adidas MiCoach ball, which is a regular
+sized soccer ball with a built in sensor that can detect the power,
+spin, and accuracy of a players kick. This ball allows players and
+coaches the to see how the athlete shoots the ball through an iOS or
+Android device to improve the players shooting form. This type of
+sensor is mainly used for beginners, professionals tend to focus on
+the more physical side of data collection such as wearable sensors
+that track physical stats. The Catapult Sports Playertek is a
+compression vest with a built-in sensor that has an accelerometer,
+magnometer, and a GPS that can track athletes' performance during
+practices. The IU Women's soccer team uses sensors like the Playertek
+to get athlete data because it allows the coaches to know what
+physical attributes to track for each player when they are training or
+playing.
 
 ## Soccer Dataset 
 
-  Practice and game data from the Indiana University Womens Soccer team was used
-  in this analysis. The results of this analysis aim to leverage 'sensed'
-  athlete data to show coaches and players if players are performing
-  optimally. The Women's team data has 34 individual columns such as sprints,
-  accelerations in varying ranges, and heartrate that are weighted based on how
-  much time the individual played. Some data points, such as sprints, can be
-  used to improve the athlete in a certain aspect of their sport, in this case
-  by increasing the number of sprints they have during a game. Using data in
-  this way can help the player improve their speed, but it will do very little
-  to improve their overall ability. Instead the Kmeans Clustering method will
-  show the entire team how they compare to each other and the ideal player of
-  their respected position, so that the entire team can improve. By using Kmeans
-  on the data each player can improve how they play, not just how fast they can
-  run. The Kmeans algorithm is optimal for this dataset because it uses eight
-  different datapoints to determine how well each player is playing their
-  position compared to how they should be. This method provides a literal target
-  from which players can see which areas they specifically need improvement on
-  to reach the centroid, or the ideal player for that position.
+Practice and game data from the Indiana University Womens Soccer team
+was used in this analysis. The results of this analysis aim to
+leverage 'sensed' athlete data to show coaches and players if players
+are performing optimally. The Women's team data has 34 individual
+columns such as sprints, accelerations in varying ranges, and
+heartrate that are weighted based on how much time the individual
+played. Some data points, such as sprints, can be used to improve the
+athlete in a certain aspect of their sport, in this case by increasing
+the number of sprints they have during a game. Using data in this way
+can help the player improve their speed, but it will do very little to
+improve their overall ability. Instead the Kmeans Clustering method
+will show the entire team how they compare to each other and the ideal
+player of their respected position, so that the entire team can
+improve. By using Kmeans on the data each player can improve how they
+play, not just how fast they can run. The Kmeans algorithm is optimal
+for this dataset because it uses eight different datapoints to
+determine how well each player is playing their position compared to
+how they should be. This method provides a literal target from which
+players can see which areas they specifically need improvement on to
+reach the centroid, or the ideal player for that position.
   
-  Clustered data can be used to compare players to other players who play the
-  same position in different divisions, levels, etc. This method can sometimes
-  be inefficient because what is "good" can vary a lot in soccer, due to it
-  being based on skill rather than physical attributes.  For example, some
-  defenders do not run very much at all, but instead rely on their ability to
-  read players movements to stop the opposing players from getting past
-  them. This would be a great data point that could likely be used to create
-  more accurate models that can help the players distinguish themselves from the
-  other positions in terms of how they should be performing. The problem is that
-  sensors are limited to numerical data, so this type of ability cannot be
-  measured. To avoid any of these limitations, the Women's Soccer team data has
-  many of the same data points measured in different ranges. For example, the
-  "Number of Accelerations" category has eight different ranges which are either
-  a deceleration or an acceleration. This way of splitting data could transcend
-  the inability to measure the "intangibles" because it measures the same data
-  points at different instances which tend to vary by position.
+Clustered data can be used to compare players to other players who
+play the same position in different divisions, levels, etc. This
+method can sometimes be inefficient because what is "good" can vary a
+lot in soccer, due to it being based on skill rather than physical
+attributes.  For example, some defenders do not run very much at all,
+but instead rely on their ability to read players movements to stop
+the opposing players from getting past them. This would be a great
+data point that could likely be used to create more accurate models
+that can help the players distinguish themselves from the other
+positions in terms of how they should be performing. The problem is
+that sensors are limited to numerical data, so this type of ability
+cannot be measured. To avoid any of these limitations, the Women's
+Soccer team data has many of the same data points measured in
+different ranges. For example, the "Number of Accelerations" category
+has eight different ranges which are either a deceleration or an
+acceleration. This way of splitting data could transcend the inability
+to measure the "intangibles" because it measures the same data points
+at different instances which tend to vary by position.
   
-  The Women's team data was obtained from the 2018 season where they faced off
-  with many other Big 10 schools. There were eleven datasets which each
-  contained a row for each of the players where you could see their names and
-  all of their data points for that particular game. Since each dataset had only
-  23 data points we decided to join all of the datasets into one big dataset
-  where the players' names were removed and replaced by the player's positon
-  into a column called "Class". The original datasets that were given to us did
-  not contain how many minutes each player played, which could alter how the
-  kmeans algorithm clusters the players. The algorithm would likely cluster the
-  players wrongly if the "Minutes Played" column was not added because it would
-  give the players who are substitutes higher values without taking into
-  accountthe amount of time that they played during a game. In soccer, the
-  amount of time you play can especially effect many of your stats because the
-  sport is largely based on endurance with a few short bursts of sprints. The
-  "Class" data point is used as the labels to the Kmeans algorithm which is used
-  to predict the outcome of each of the 170 rows' stats against the
-  kmeans-computed stats. By using a prediction variable we have an insight as to
-  where the kmeans-computed clusters should be centered at.
+The Women's team data was obtained from the 2018 season where they
+faced off with many other Big 10 schools. There were eleven datasets
+which each contained a row for each of the players where you could see
+their names and all of their data points for that particular
+game. Since each dataset had only 23 data points we decided to join
+all of the datasets into one big dataset where the players' names were
+removed and replaced by the player's positon into a column called
+"Class". The original datasets that were given to us did not contain
+how many minutes each player played, which could alter how the kmeans
+algorithm clusters the players. The algorithm would likely cluster the
+players wrongly if the "Minutes Played" column was not added because
+it would give the players who are substitutes higher values without
+taking into accountthe amount of time that they played during a
+game. In soccer, the amount of time you play can especially effect
+many of your stats because the sport is largely based on endurance
+with a few short bursts of sprints. The "Class" data point is used as
+the labels to the Kmeans algorithm which is used to predict the
+outcome of each of the 170 rows' stats against the kmeans-computed
+stats. By using a prediction variable we have an insight as to where
+the kmeans-computed clusters should be centered at.
 
 :wave: 'those who are interested ' this should just be end users....avoid too much jargon . 
 
