@@ -4,6 +4,9 @@
 
 :warning: fix copy paste errors. 
 
+:wave::wave::wave::wave::wave::wave::wave::wave::wave::wave::wave::wave::wave::wave::wave::wave::wave:
+This paper is full of plagiarizm and must be returned so the authors fix it. ANy time you use " .... " it must be followed with a citation or that quotes. Please make sure you have taken the IU plgiarizm certificat, or looked at the material we provide!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 :wave: there is no such thing as additional analysis, integrate it in your main paper, if your title does not fit, you need to adjust that
 
 :wave: This paper is very difficult to read due to its dense descriptions that do not explain things at times as easy as it could be. For example the explanation of tehe kmeans couold be simplified if you describe it in mathematical terms. But instead you do this at the end, confusing the reader
