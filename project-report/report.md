@@ -303,6 +303,8 @@ class. Overall, the model scored poorly. Its scatter plot:
 
 ![Clustering scatter plot](images/cluster_plot.png)
 
+:o: label missing
+
 Looking at the scatter plot showing the clusters and the data points true
 labels, we can see that the poor score can be mainly attributed to the general
 failure to classify forwards (x's) correctly. The defenders (dots) and
@@ -311,9 +313,15 @@ scatter plot without the any forward data points makes it even more apparent.
 
 ![Clustering scatter plot](images/cluster_plot_no_forwards.png)
 
+:o: label missing
+
 The black cluster was split almost 50/50 between forwards and midfielders despite them being decently separated groups, mainly because the model identified the outliers of the dataset as the red cluster. It's possible that if the dataset was cleaned up by removing the outliers before clustering, the model would've separated the classes much more accurately. Outliers as defined by our boxplot are shown here: 
 
 ![Boxplot after normalization](images/boxplots.pdf)
+
+:o: label missing
+
+:o: pdf images not allowed convert to png
 
 Our method for removing the outliers could have involved calculating a Z-Score
 for each data point, which gives the amount of standard deviations a point is
@@ -399,6 +407,8 @@ throughout the game.
 | SVM                          | .58                 | .63                |
 
 :wave: maybe a table to summarize these results
+
+:o: caotion missing, captions are above table
 
 ## Specification
 
