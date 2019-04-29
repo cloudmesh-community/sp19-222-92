@@ -213,7 +213,7 @@ a unsupervised data set which was need to in this case. While K-Means gives an
 optimal cluster model, spectral cluster is better. The K-means objective
 function is given in @eq:obj-func.
 
-$\sum_{j=1}^k\sum_{i=1}^n{\|x_{i}^{(j)} - c_j \|}^2${#eq:obj-func}
+$$\sum_{j=1}^k\sum_{i=1}^n{\|x_{i}^{(j)} - c_j \|}^2$${#eq:obj-func}
 
 ### Spectral Clustering
 
