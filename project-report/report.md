@@ -86,7 +86,7 @@ Sensors have become more prominent in sports due to recent
 advancements in biomedical engineering which have made sensory
 technology better to create more informative data. These new
 innovations in sensory tech can now measure data points such as
-“temperature, oxygen saturation levels and heart rate (SpO2) through
+“temperature, oxygen saturation levels, and heart rate (SpO2) through
 photo optic sensors in wearable rings and wrist devices”.  These new
 advancements are necessary because now, more than ever, “the
 differences between athletes are becoming more and more slight” which
