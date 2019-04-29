@@ -102,15 +102,87 @@ given data to make improvements on the field.
   posture and provide real-time feedback to athletes so they can
   perfect their form.”
 
-  Soccer has recently began to adopt the use of technology in many different ways such as the Adidas MiCoach ball, which is a regular sized soccer ball with a built in sensor that can detect the power, spin, and accuracy of a players kick. This ball allows players and coaches the to see how the athlete shoots the ball through an iOS or Android device to improve the players shooting form. This type of sensor is mainly used for beginners, professionals tend to focus on the more physical side of data collection such as wearable sensors that track physical stats. The Catapult Sports Playertek is a compression vest with a built-in sensor that has an accelerometer, magnometer, and a GPS that can track athletes' performance during practices. The IU Women's soccer team uses sensors like the Playertek to get athlete data because it allows the coaches to know what physical attributes to track for each player when they are training or playing.
+  Soccer has recently began to adopt the use of technology in many
+  different ways such as the Adidas MiCoach ball, which is a regular
+  sized soccer ball with a built in sensor that can detect the power,
+  spin, and accuracy of a players kick. This ball allows players and
+  coaches the to see how the athlete shoots the ball through an iOS or
+  Android device to improve the players shooting form. This type of
+  sensor is mainly used for beginners, professionals tend to focus on
+  the more physical side of data collection such as wearable sensors
+  that track physical stats. The Catapult Sports Playertek is a
+  compression vest with a built-in sensor that has an accelerometer,
+  magnometer, and a GPS that can track athletes' performance during
+  practices. The IU Women's soccer team uses sensors like the
+  Playertek to get athlete data because it allows the coaches to know
+  what physical attributes to track for each player when they are
+  training or playing.
 
 ## Soccer Dataset 
 
-  Practice and game data from the Indiana University Womens Soccer team was used in this analysis. The results of this analysis aim to leverage 'sensed' athlete data to show coaches and players if players are performing optimally. The Women's team data has 34 individual columns such as sprints, accelerations in varying ranges, and heartrate that are weighted based on how much time the individual played. Some data points, such as sprints, can be used to improve the athlete in a certain aspect of their sport, in this case by increasing the number of sprints they have during a game. Using data in this way can help the player improve their speed, but it will do very little to improve their overall ability. Instead the Kmeans Clustering method will show the entire team how they compare to each other and the ideal player of their respected position, so that the entire team can improve. By using Kmeans on the data each player can improve how they play, not just how fast they can run. The Kmeans algorithm is optimal for this dataset because it uses eight different datapoints to determine how well each player is playing their position compared to how they should be. This method provides a literal target from which players can see which areas they specifically need improvement on to reach the centroid, or the ideal player for that position.
+  Practice and game data from the Indiana University Womens Soccer
+  team was used in this analysis. The results of this analysis aim to
+  leverage 'sensed' athlete data to show coaches and players if
+  players are performing optimally. The Women's team data has 34
+  individual columns such as sprints, accelerations in varying ranges,
+  and heartrate that are weighted based on how much time the
+  individual played. Some data points, such as sprints, can be used to
+  improve the athlete in a certain aspect of their sport, in this case
+  by increasing the number of sprints they have during a game. Using
+  data in this way can help the player improve their speed, but it
+  will do very little to improve their overall ability. Instead the
+  Kmeans Clustering method will show the entire team how they compare
+  to each other and the ideal player of their respected position, so
+  that the entire team can improve. By using Kmeans on the data each
+  player can improve how they play, not just how fast they can
+  run. The Kmeans algorithm is optimal for this dataset because it
+  uses eight different datapoints to determine how well each player is
+  playing their position compared to how they should be. This method
+  provides a literal target from which players can see which areas
+  they specifically need improvement on to reach the centroid, or the
+  ideal player for that position.
   
-  Clustered data can be used to compare players to other players who play the same position in different divisions, levels, etc. This method can sometimes be inefficient because what is "good" can vary a lot in soccer, due to it being based on skill rather than physical attributes.  For example, some defenders do not run very much at all, but instead rely on their ability to read players movements to stop the opposing players from getting past them. This would be a great data point that could likely be used to create more accurate models that can help the players distinguish themselves from the other positions in terms of how they should be performing. The problem is that sensors are limited to numerical data, so this type of ability cannot be measured. To avoid any of these limitations, the Women's Soccer team data has many of the same data points measured in different ranges. For example, the "Number of Accelerations" category has eight different ranges which are either a deceleration or an acceleration. This way of splitting data could transcend the inability to measure the "intangibles" because it measures the same data points at different instances which tend to vary by position.
+  Clustered data can be used to compare players to other players who
+  play the same position in different divisions, levels, etc. This
+  method can sometimes be inefficient because what is "good" can vary
+  a lot in soccer, due to it being based on skill rather than physical
+  attributes.  For example, some defenders do not run very much at
+  all, but instead rely on their ability to read players movements to
+  stop the opposing players from getting past them. This would be a
+  great data point that could likely be used to create more accurate
+  models that can help the players distinguish themselves from the
+  other positions in terms of how they should be performing. The
+  problem is that sensors are limited to numerical data, so this type
+  of ability cannot be measured. To avoid any of these limitations,
+  the Women's Soccer team data has many of the same data points
+  measured in different ranges. For example, the "Number of
+  Accelerations" category has eight different ranges which are either
+  a deceleration or an acceleration. This way of splitting data could
+  transcend the inability to measure the "intangibles" because it
+  measures the same data points at different instances which tend to
+  vary by position.
   
-  The Women's team data was obtained from the 2018 season where they faced off with many other Big 10 schools. There were eleven datasets which each contained a row for each of the players where you could see their names and all of their data points for that particular game. Since each dataset had only 23 data points we decided to join all of the datasets into one big dataset where the players' names were removed and replaced by the player's positon into a column called "Class". The original datasets that were given to us did not contain how many minutes each player played, which could alter how the kmeans algorithm clusters the players. The algorithm would likely cluster the players wrongly if the "Minutes Played" column was not added because it would give the players who are substitutes higher values without taking into accountthe amount of time that they played during a game. In soccer, the amount of time you play can especially effect many of your stats because the sport is largely based on endurance with a few short bursts of sprints. The "Class" data point is used as the labels to the Kmeans algorithm which is used to predict the outcome of each of the 170 rows' stats against the kmeans-computed stats. By using a prediction variable we have an insight as to where the kmeans-computed clusters should be centered at.
+  The Women's team data was obtained from the 2018 season where they
+  faced off with many other Big 10 schools. There were eleven datasets
+  which each contained a row for each of the players where you could
+  see their names and all of their data points for that particular
+  game. Since each dataset had only 23 data points we decided to join
+  all of the datasets into one big dataset where the players' names
+  were removed and replaced by the player's positon into a column
+  called "Class". The original datasets that were given to us did not
+  contain how many minutes each player played, which could alter how
+  the kmeans algorithm clusters the players. The algorithm would
+  likely cluster the players wrongly if the "Minutes Played" column
+  was not added because it would give the players who are substitutes
+  higher values without taking into accountthe amount of time that
+  they played during a game. In soccer, the amount of time you play
+  can especially effect many of your stats because the sport is
+  largely based on endurance with a few short bursts of sprints. The
+  "Class" data point is used as the labels to the Kmeans algorithm
+  which is used to predict the outcome of each of the 170 rows' stats
+  against the kmeans-computed stats. By using a prediction variable we
+  have an insight as to where the kmeans-computed clusters should be
+  centered at.
 
 :wave: 'those who are interested ' this should just be end users....avoid too much jargon . 
 
@@ -123,28 +195,45 @@ given data to make improvements on the field.
 
 ### K-means
 
-K-Means is an unsupervised machine learning algorithm that takes an unlabeled dataset and finds groups within data without defined 
-categories. Unsupervised is learning from data that are unlabeled meaning you don’t know what the values of the output data might be. 
-The idea is to look at the average or mean values that can be clustered and how they can be related to the k groups. K is also known as 
-centroids which is a data point at the center of each cluster. Each cluster is placed in a certain position because depending on how 
-close the clusters are to each other will change the results. Which is why the placement of the cluster are important because the layout 
-of centroids will determine the results. In K-Means the centroids are randomly selected and then used as the cluster of each point. 
-After the centroid is placed then all the data point is split up into the correct centroids based on the data point that they are. Now 
-that the data points have a home the next step is re-calculation of k to optimize the position of the centroid. This process of 
-optimization continues to happen until centroids have stabilized or a certain number of iterations have occurred. When using this 
-algorithm, the hope is that the results can explain why common parameter values are in the same group. This algorithm takes numerical 
-values or data points that describe a coordinated value within a data set and cluster them according to the given k. For example, K-
-Means is beneficial for this project because is able to focus on a particular data set for the women's soccer team at Indiana University 
-(IU) and compare that to users data. K-Means coordinates can represent and describe many different things such as elections, medical 
-test, sports teams, or wine data. Typical you use K-means on a dataset to get the model of the data, this is used to see the behaviors 
-and analyze the patterns the data set. When using clustering methods variance becomes an important topic trying to understand the math 
-behind this algorithm. Variance is a measurement of how far data values are from the mean. By look at the variance equation, it shows 
-that it is a measure of the square difference between the data points and the mean value and then the average. When using the K-means 
-algorithm one of the key points is to measure the closeness of the data to its average which led into cluster variance which divides the 
-data into clusters, each will have its own average. While there are many different machine learning algorithms K-Means worked best 
-because it takes a unsupervised data set which was need to in this case. While K-Means gives an optimal cluster model, spectral cluster 
-is better.  
-                                      $\sum_{j=1}^k\sum_{i=1}^n{\|x_{i}^{(j)} - c_j \|}^2$
+K-Means is an unsupervised machine learning algorithm that takes an unlabeled
+dataset and finds groups within data without defined categories. Unsupervised is
+learning from data that are unlabeled meaning you don’t know what the values of
+the output data might be.  The idea is to look at the average or mean values
+that can be clustered and how they can be related to the k groups. K is also
+known as centroids which is a data point at the center of each cluster. Each
+cluster is placed in a certain position because depending on how close the
+clusters are to each other will change the results. Which is why the placement
+of the cluster are important because the layout of centroids will determine the
+results. In K-Means the centroids are randomly selected and then used as the
+cluster of each point.  After the centroid is placed then all the data point is
+split up into the correct centroids based on the data point that they are. Now
+that the data points have a home the next step is re-calculation of k to
+optimize the position of the centroid. This process of optimization continues to
+happen until centroids have stabilized or a certain number of iterations have
+occurred. When using this algorithm, the hope is that the results can explain
+why common parameter values are in the same group. This algorithm takes
+numerical values or data points that describe a coordinated value within a data
+set and cluster them according to the given k. For example, K- Means is
+beneficial for this project because is able to focus on a particular data set
+for the women's soccer team at Indiana University (IU) and compare that to users
+data. K-Means coordinates can represent and describe many different things such
+as elections, medical test, sports teams, or wine data. Typical you use K-means
+on a dataset to get the model of the data, this is used to see the behaviors and
+analyze the patterns the data set. When using clustering methods variance
+becomes an important topic trying to understand the math behind this
+algorithm. Variance is a measurement of how far data values are from the
+mean. By look at the variance equation, it shows that it is a measure of the
+square difference between the data points and the mean value and then the
+average. When using the K-means algorithm one of the key points is to measure
+the closeness of the data to its average which led into cluster variance which
+divides the data into clusters, each will have its own average. While there are
+many different machine learning algorithms K-Means worked best because it takes
+a unsupervised data set which was need to in this case. While K-Means gives an
+optimal cluster model, spectral cluster is better. The K-means objective
+function is given in @eq:obj-func.
+
+$\sum_{j=1}^k\sum_{i=1}^n{\|x_{i}^{(j)} - c_j \|}^2${#eq:obj-func}
+
 ### Spectral Clustering
 
 Before landing on K-means to be the machine learning algorithm, spectral clustering was the set machine learning algorithm for finding 
