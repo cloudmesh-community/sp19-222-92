@@ -28,15 +28,23 @@ you will be able to see how this is rendered in the epub.
 
 ## Abstract 
 
-This project will take Indiana University Women's soccer players data: how much distance they have sprinted, how fast they ran, total 
-distance, number of accelerations, calories, and recovery time to determine their positions on the field. Typically, a goalie does not 
-run very much, or have very much quantitative data from which predictions can be made, so the goalie position was removed from the 
-dataset entirely. Based off the data set this AI will determine which position the player plays using the k-means machine learning 
-method. The k-means machine learning algorithm will cluster data by separating it into groups of equal variances. This Machine Learning 
-algorithm will work best for this because we are trying to group players based on their data to see what position they would actually be 
-classified as. For example, we know that if a player has ran a certain speed over a certain distance then they most likely play that 
-position. This algorithm can set the standard for what it takes to play each position. It would allow coaches and players both to use 
-the given data to make improvements on the field. 
+This project will take Indiana University Women's soccer players data:
+how much distance they have sprinted, how fast they ran, total
+distance, number of accelerations, calories, and recovery time to
+determine their positions on the field. Typically, a goalie does not
+run very much, or have very much quantitative data from which
+predictions can be made, so the goalie position was removed from the
+dataset entirely. Based off the data set this AI will determine which
+position the player plays using the k-means machine learning
+method. The k-means machine learning algorithm will cluster data by
+separating it into groups of equal variances. This Machine Learning
+algorithm will work best for this because we are trying to group
+players based on their data to see what position they would actually
+be classified as. For example, we know that if a player has ran a
+certain speed over a certain distance then they most likely play that
+position. This algorithm can set the standard for what it takes to
+play each position. It would allow coaches and players both to use the
+given data to make improvements on the field.
 
 ## Introduction
 
