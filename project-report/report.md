@@ -96,9 +96,9 @@ advancements in biomedical engineering which have made sensory
 technology better to create more informative data. These new
 innovations in sensory tech can now measure data points such as
 “temperature, oxygen saturation levels, and heart rate (SpO2) through
-photo optic sensors in wearable rings and wrist devices”.  These new
+photo optic sensors in wearable rings and wrist devices” :o:.  These new
 advancements are necessary because now, more than ever, “the
-differences between athletes are becoming more and more slight” which
+differences between athletes are becoming more and more slight” :o: which
 has led coaches and trainers to look to data analytics to get an
 advantage. By putting small sensors into players’ training equipment,
 we can detect important aspects of playing a sport such as muscle
@@ -106,7 +106,7 @@ exertion, heart rate, and respiration. Sensors can provide immediate
 feedback to the athletes. For example, when attached to player attire,
 “accelerometers and conductive materials can measure posture and
 provide real-time feedback to athletes so they can perfect their
-form.”
+form.” :o:
 
 Soccer has recently began to adopt the use of technology in many
 different ways such as the Adidas MiCoach ball, which is a regular
@@ -149,7 +149,7 @@ reach the centroid, or the ideal player for that position.
   
 Clustered data can be used to compare players to other players who
 play the same position in different divisions, levels, etc. This
-method can sometimes be inefficient because what is "good" can vary a
+method can sometimes be inefficient because what is "good" :o: can vary a
 lot in soccer, due to it being based on skill rather than physical
 attributes.  For example, some defenders do not run very much at all,
 but instead rely on their ability to read players movements to stop
@@ -160,10 +160,10 @@ positions in terms of how they should be performing. The problem is
 that sensors are limited to numerical data, so this type of ability
 cannot be measured. To avoid any of these limitations, the Women's
 Soccer team data has many of the same data points measured in
-different ranges. For example, the "Number of Accelerations" category
+different ranges. For example, the "Number of Accelerations" :o: category
 has eight different ranges which are either a deceleration or an
 acceleration. This way of splitting data could transcend the inability
-to measure the "intangibles" because it measures the same data points
+to measure the "intangibles" :o: because it measures the same data points
 at different instances which tend to vary by position.
   
 The Women's team data was obtained from the 2018 season where they
@@ -173,10 +173,10 @@ their names and all of their data points for that particular
 game. Since each dataset had only 23 data points we decided to join
 all of the datasets into one big dataset where the players' names were
 removed and replaced by the player's positon into a column called
-"Class". The original datasets that were given to us did not contain
+"Class" :o:. The original datasets that were given to us did not contain
 how many minutes each player played, which could alter how the kmeans
 algorithm clusters the players. The algorithm would likely cluster the
-players wrongly if the "Minutes Played" column was not added because
+players wrongly if the "Minutes Played" :o: column was not added because
 it would give the players who are substitutes higher values without
 taking into accountthe amount of time that they played during a
 game. In soccer, the amount of time you play can especially effect
@@ -240,7 +240,7 @@ Before landing on K-means to be the machine learning algorithm, spectral
 clustering was the set machine learning algorithm for finding out how close
 people were playing against Indiana University womens soccer team. Spectral
 clustering is a popular machine learning algorithm used in recent years
-according to Von Luxburg (2007) in his article A tutorial on spectral
+according to Von Luxburg (2007) :o: in his article A tutorial on spectral
 clustering. This algorithm can be effectively solved by using standard linear
 algebra methods and, software. For the most part, it is known to outperform
 K-means which is what was seen with this data set. Spectral clustering uses the
