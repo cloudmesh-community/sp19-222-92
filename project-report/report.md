@@ -21,7 +21,7 @@ you will be able to see how this is rendered in the epub.
 | Jesus Badillo, Xandria McDowell, Ben Yeagley 
 | jebadi@iu.edu, xmcdowel@iu.edu, byeagley@indiana.edu
 | Indiana University, Example University
-| hid: sp19-222-92 sp19-222-:wave: sp19-222-:wave: 
+| hid: sp19-222-92 
 | github: [:cloud:](https://github.com/cloudmesh-community/sp19-222-92/blob/master/project-report/report.md)
 | code: [:cloud:](https://github.com/cloudmesh-community/sp19-222-92/tree/master/project-code)
 
