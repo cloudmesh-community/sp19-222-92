@@ -279,11 +279,11 @@ perspective there are the non-linear and linear methods. Typically, the Linear
 method is used because it is easier to implement. In the linear calculation 
 result in each variable being apart of a linear combination of the initial variables:
 k \geq p
+
 S_i = w_ix_i + … w_ipxp for I = 1,…, k
 
 S = Wx
-x
-Wx represents the weighted matrix in linear conversion. Ap*k is the same as aAp*k 
+Wx represents the weighted matrix in linear conversion. Ap*k is the same as x =As 
 which are new variables or s identified as hidden or latent variables according to
 @fodor2002survey. When using the matrix x in terms of n x p the equations is 
 
