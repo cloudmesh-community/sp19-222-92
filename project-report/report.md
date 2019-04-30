@@ -12,7 +12,6 @@
 
 :wave: increase tickmarks in plts so we can distinguish them, they are at this time unreadable
 
-:wave: there is no such thing as additional analysis, integrate it in your main paper, if your title does not fit, you need to adjust that
 
 :wave: This paper is very difficult to read due to its dense descriptions that do not explain things at times as easy as it could be. For example the explanation of tehe kmeans couold be simplified if you describe it in mathematical terms. But instead you do this at the end, confusing the reader
 
