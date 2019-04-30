@@ -275,7 +275,21 @@ there were many points within one players statistics. Having multiple points,
 was too much for K-means to give explainable results. Dimension reduction
 allowed the data set to be reduced to a certain number of random variables by
 obtaining a set of key variables. Looking at dimension reduction from the math
-perspective there are the non-linear and linear methods.
+perspective there are the non-linear and linear methods. Typically, the Linear 
+method is used because it is easier to implement. In the linear calculation 
+result in each variable being apart of a linear combination of the initial variables:
+k \geq p
+S_i = w_ix_i + … w_ipxp for I = 1,…, k
+
+S = Wx
+x
+Wx represents the weighted matrix in linear conversion. Ap*k is the same as aAp*k 
+which are new variables or s identified as hidden or latent variables according to
+@fodor2002survey. When using the matrix x in terms of n x p the equations is 
+
+	S_ij = w_1jW_1j + … w1pXpJ for I =1…,k and j = 1…,n 
+According to @fodor2002survey this is the easiest linear technique to use.  
+
 
 ## Results
 
