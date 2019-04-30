@@ -240,10 +240,9 @@ $$\sum_{j=1}^k\sum_{i=1}^n{\|x_{i}^{(j)} - c_j \|}^2$${#eq:obj-func}
 
 Before landing on K-means to be the machine learning algorithm, spectral
 clustering was the set machine learning algorithm for finding out how close
-people were playing against Indiana University womens soccer team. Spectral
-clustering is a popular machine learning algorithm used in recent years
-according to Von Luxburg (2007) @von2007tutorial :o: in his article A tutorial on spectral
-clustering. This algorithm can be effectively solved by using standard linear
+people were playing against Indiana University womens soccer team. A commonly 
+used algorithm for classification that has become popular in recent years is 
+spectral clustering @von2007tutorial. This algorithm can be effectively solved by using standard linear
 algebra methods and, software. For the most part, it is known to outperform
 K-means which is what was seen with this data set. Spectral clustering uses the
 data points as nodes of a graph, which are then treated as partitioning points
