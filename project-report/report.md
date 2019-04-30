@@ -2,12 +2,11 @@
 
 :warning: in review
 
-:o: your .bib is full where are the intext citations ?????
+:o: your .bib is full where are the intext citations ????? You shouldnt have a bib entry unless it is cited in text. This is easy just use @tag-name. 
 
 :warning: fix copy paste errors. 
 
-:wave::wave::wave::wave::wave::wave::wave::wave::wave::wave::wave::wave::wave::wave::wave::wave::wave:
-This paper is full of plagiarizm and must be returned so the authors fix it. Any time you use " .... " it must be followed with a citation or that quotes. Please make sure you have taken the IU plgiarizm certificat, or looked at the material we provide!!!!!!!!!!!!!!!!!!!!!!!!!!! questionable sentences are marked with :o:
+:wave: As is this paper is full of plagiarizm and must be returned so the authors fix it. Any time you use " .... " it must be followed with a citation or that quotes. Please make sure you have taken the IU plgiarizm certificat, or looked at the material we provide! questionable sentences are marked with :o:
 
 :wave: if you want to highlightthings that is not done with quotes but in *italic* . questionable words are marked with :o:
 
