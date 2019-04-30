@@ -353,7 +353,7 @@ may not be the right choice.
 
 :wave: would more data help on your analysis?
 
-## Additional Analysis
+##Analysis
 
 A necessary question to ask is: is the low v-measure score of the model due to
 possible errors in the dataset like those discussed above, an incorrect choice
