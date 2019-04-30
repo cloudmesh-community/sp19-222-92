@@ -242,7 +242,7 @@ Before landing on K-means to be the machine learning algorithm, spectral
 clustering was the set machine learning algorithm for finding out how close
 people were playing against Indiana University womens soccer team. Spectral
 clustering is a popular machine learning algorithm used in recent years
-according to Von Luxburg (2007) @von2007tutorial in his article A tutorial on spectral
+according to Von Luxburg (2007) @von2007tutorial :o: in his article A tutorial on spectral
 clustering. This algorithm can be effectively solved by using standard linear
 algebra methods and, software. For the most part, it is known to outperform
 K-means which is what was seen with this data set. Spectral clustering uses the
