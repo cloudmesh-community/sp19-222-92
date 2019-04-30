@@ -327,7 +327,8 @@ scatter plot without the any forward data points makes it even more apparent.
 :o: label missing
 
 The black cluster was split almost 50/50 between forwards and midfielders despite them being decently separated groups, mainly because the model identified the outliers of the dataset as the red cluster. It's possible that if the dataset was cleaned up by removing the outliers before clustering, the model would've separated the classes much more accurately. Outliers as defined by our boxplot are shown here @nishida_nishida_2018 @seif_2018: 
-
+ 
+ 	graph below is a Boxplot of data after normlization
 ![Boxplot after normalization](images/boxplots.pdf)
 
 :o: label missing
@@ -363,7 +364,7 @@ may not be the right choice.
 
 :wave: would more data help on your analysis?
 
-##Analysis
+## Analysis
 
 A necessary question to ask is: is the low v-measure score of the model due to
 possible errors in the dataset like those discussed above, an incorrect choice
@@ -408,6 +409,8 @@ sorely needed to further separate the classes would be GPS data to find the
 average location on the field for each player, or a heat map of their movement
 throughout the game.
 
+	Machine Learning table below
+
 | Machine Learning Method      | Accuracy (training) | Accuracy (testing) |
 |------------------------------|---------------------|--------------------|
 | Logistic Regression          | .63                 | .60                |
@@ -417,7 +420,6 @@ throughout the game.
 | Gaussian Naive Bayes         | .73                 | .63                |
 | SVM                          | .58                 | .63                |
 
-:wave: maybe a table to summarize these results
 
 :o: caotion missing, captions are above table
 
