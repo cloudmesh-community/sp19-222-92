@@ -2,6 +2,8 @@
 
 :warning: in review
 
+:o: your .bib is full where are the intext citations ?????
+
 :warning: fix copy paste errors. 
 
 :wave::wave::wave::wave::wave::wave::wave::wave::wave::wave::wave::wave::wave::wave::wave::wave::wave:
