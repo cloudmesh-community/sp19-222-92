@@ -281,7 +281,7 @@ perspective there are the non-linear and linear methods.
 
 Normally a clustering model cannot be scored for its accuracy; there are no true
 labels in unsupervised learning to compare with the clustering models predicted
-labels. However, in our case each of the fitness data points had the player name
+labels @k-means-clustering. However, in our case each of the fitness data points had the player name
 associated with it, so we were able to replace each name in the dataset with
 their position on the field (the predicted value). Converting these positions to
 numeric representations gave us a list of true labels to use for scoring. We
@@ -290,15 +290,15 @@ page. Of course, some players may play in different positions throughout the
 season, so some of the labels may be incorrect. Our labelling process was the
 best we could do with the information available. We focused on three evaluations
 for our model: completeness, homogeneity, and v-measure. Completeness is a
-measure of how well each class was clustered together, while homogeneity scores
-the clusters based on what degree in contains only one class. The harmonic mean
-of the completeness and homogeneity scores gives the v-measure score. Each is
+measure of how well each class was clustered together @scikit-completeness, while homogeneity scores
+the clusters based on what degree in contains only one class @scikit-homogeneity. The harmonic mean
+of the completeness and homogeneity scores gives the v-measure score @wikipedia_2019-harmonic-mean @scikit-vmeasure. Each is
 considered perfect if their score is 1.0. Conversely, 0.0 is the worst possible
 score. The results of our clustering model can be seen in
 @tbl:results-table. had a completeness score of .260, homogeneity score of .227,
 and a v-measure score of .242. This means our model was more effective at
 clustering the classes together than having each cluster contain purely one
-class. Overall, the model scored poorly. Its scatter plot:
+class. Overall, the model scored poorly. Its scatter plot @kaggle:
 
 ![Clustering scatter plot](images/cluster_plot.png)
 
@@ -314,7 +314,7 @@ scatter plot without the any forward data points makes it even more apparent.
 
 :o: label missing
 
-The black cluster was split almost 50/50 between forwards and midfielders despite them being decently separated groups, mainly because the model identified the outliers of the dataset as the red cluster. It's possible that if the dataset was cleaned up by removing the outliers before clustering, the model would've separated the classes much more accurately. Outliers as defined by our boxplot are shown here: 
+The black cluster was split almost 50/50 between forwards and midfielders despite them being decently separated groups, mainly because the model identified the outliers of the dataset as the red cluster. It's possible that if the dataset was cleaned up by removing the outliers before clustering, the model would've separated the classes much more accurately. Outliers as defined by our boxplot are shown here @nishida_nishida_2018 @seif_2018: 
 
 ![Boxplot after normalization](images/boxplots.pdf)
 
@@ -325,7 +325,7 @@ The black cluster was split almost 50/50 between forwards and midfielders despit
 Our method for removing the outliers could have involved calculating a Z-Score
 for each data point, which gives the amount of standard deviations a point is
 from the mean of the dataset, and then getting rid of points with a Z-Score
-above a certain amount of standard deviations. However, it's important to
+above a certain amount of standard deviations @sharma_sharma_2018. However, it's important to
 determine if the points in that top-right cluster would even qualify as true
 outliers or if they are just points the clustering model is unable to
 predict. We might need to investigate those points in the original dataset to
@@ -359,28 +359,28 @@ of machine learning method, a general unpredictability of player position with
 the type of data given, or some other reason? To examine the second possibility
 (wrong method), we split up the data into training and testing using
 train_test_split from sklearn, and then we added a variety of other
-classification techniques to the project code. The first technique was
+classification techniques to the project code @wikipedia_2019-multiclass. The first technique was
 Multinomial Logistic Regression, a method that uses a linear combination of the
-predictor variables to model the dependent variable (position). The model had an
+predictor variables to model the dependent variable (position) @abhishekabhishek. The model had an
 accuracy score of .63 for our training data and .60 for our test data. The next
 technique we employed was a Decision Tree Classifier, which handles multi-class
 predictions naturally. Decision trees use the observed variables from the
 dataset to make choices (branches of the tree), leading to a conclusion about
-the predicted value (leaves of the tree). We gave our decision tree a max depth
+the predicted value (leaves of the tree) @wikipedia_2019-tree. We gave our decision tree a max depth
 of eight as its only parameter. It had an accuracy score of .80 for the training
 data and .65 for the test data. Next, our K-Nearest Neighbors Classification
 model functions by taking a vote of the points around the point to be classified
-and assigning the point whichever class that had the most votes. The number of
+and assigning the point whichever class that had the most votes @wikipedia_2019-knn. The number of
 neighbors used can be specified in the function call, and we found eight
 neighbors worked best. Our k-NN model had an accuracy score of .76 for the
 training data and .74 for the test data. We have a Linear Discriminant Analysis
-classifier as well, with the number of components set at two. Its accuracy score
+classifier as well, with the number of components set at two @multiclass-linear-discriminant-analysis @wikipedia_2019-lda. Its accuracy score
 was .69 for the training data and .60 for the test data. We also had a Gaussian
 Naïve Bayes classifier despite the fact that our data doesn't have features that
 can be considered independent, but it still serves the purpose of comparison to
-the clustering model. Its accuracy score was .73 for the training data and .63
+the clustering model @machine_learning_mastery_2016 @scikit-naive-bayes @scikit-gaussiannb. Its accuracy score was .73 for the training data and .63
 for the test data. Finally, we had an SVM classifier added to our project code,
-another method better suited for just two classes but used anyway. Our SVM model
+another method better suited for just two classes but used anyway @apache_ignite_documentation @scikit-svc. Our SVM model
 had an accuracy score of .58 for the training data and .63 for the test data.
 Overall, the highest scoring model for the test data was K-Nearest Neighbors,
 yet its .74 score for the test data still was not very high. It is difficult to
