@@ -12,16 +12,7 @@
 
 :wave: increase tickmarks in plts so we can distinguish them, they are at this time unreadable
 
-
 :wave: This paper is very difficult to read due to its dense descriptions that do not explain things at times as easy as it could be. For example the explanation of tehe kmeans couold be simplified if you describe it in mathematical terms. But instead you do this at the end, confusing the reader
-
-:smiley: should you should me how to put equation. Can you use the following cite  <https://home.deib.polimi.it/matteucc/Clustering/tutorial_html/kmeans.html> for the kmeans euquation
-
-:smiley: Done! below is a link with helpful syntax. I will update procedding shortly and 
-you will be able to see how this is rendered in the epub. 
-
-<https://en.wikibooks.org/wiki/LaTeX/Mathematics>
-
 
 :wave: add your images and references 
 
@@ -216,7 +207,7 @@ occurred. When using this algorithm, the hope is that the results can explain
 why common parameter values are in the same group. This algorithm takes
 numerical values or data points that describe a coordinated value within a data
 set and cluster them according to the given k. For example, K- Means is
-beneficial for this project because is able to focus on a particular data set
+beneficial for this project because it's able to focus on a particular data set
 for the women's soccer team at Indiana University (IU) and compare that to users
 data. K-Means coordinates can represent and describe many different things such
 as elections, medical test, sports teams, or wine data. Typical you use K-means
@@ -230,7 +221,7 @@ average. When using the K-means algorithm one of the key points is to measure
 the closeness of the data to its average which led into cluster variance which
 divides the data into clusters, each will have its own average. While there are
 many different machine learning algorithms K-Means worked best because it takes
-a unsupervised data set which was need to in this case. While K-Means gives an
+a unsupervised data set which was need in this case. While K-Means gives an
 optimal cluster model, spectral cluster is better. The K-means objective
 function is given in @eq:obj-func.
 
