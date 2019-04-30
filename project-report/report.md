@@ -193,7 +193,7 @@ clusters should be centered. The Kmeans algorithm uses the labels to
 predict the outcome of each of the 170 rows' stats against the 
 kmeans-computed stats.
 
-## Description and Algorithm
+## Algorithm Discussion 
 
 ### K-means
 
