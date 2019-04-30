@@ -268,8 +268,6 @@ $\left(\frac{1}{2}\right) \displaystyle\sum_{i, j=1}^{n} w_ij(f_i - f_j)^2$
 
 ### Dimensional Reduction 
 
-:warning: add more to this section
-
 Dimensional reduction was something that was needed for this data set because
 there were many points within one players statistics. Having multiple points,
 was too much for K-means to give explainable results. Dimension reduction
