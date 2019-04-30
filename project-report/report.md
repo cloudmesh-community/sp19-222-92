@@ -165,7 +165,7 @@ Soccer team data has many of the same data points measured in
 different ranges. For example, the *Number of Accelerations* category
 has eight different ranges which are either a deceleration or an
 acceleration. This way of splitting data could transcend the inability
-to measure the *intangibles"* because it measures the same data points
+to measure the *intangibles* because it measures the same data points
 at different instances which tend to vary by position.
   
 The Women's team data was obtained from the 2018 season where they
