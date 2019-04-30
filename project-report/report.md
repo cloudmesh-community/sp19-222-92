@@ -285,7 +285,7 @@ Wx represents the weighted matrix in linear conversion. Ap*k is the same as x =A
 which are new variables or s identified as hidden or latent variables according to
 @fodor2002survey. When using the matrix x in terms of n x p the equations is 
 
-	S_ij = w_1jW_1j + … w1pXpJ for I =1…,k and j = 1…,n 
+S_ij = w_1jW_1j + … w1pXpJ for I =1…,k and j = 1…,n 
 According to @fodor2002survey this is the easiest linear technique to use.  
 
 
@@ -409,7 +409,7 @@ sorely needed to further separate the classes would be GPS data to find the
 average location on the field for each player, or a heat map of their movement
 throughout the game.
 
-	Machine Learning table below
+Machine Learning table below
 
 | Machine Learning Method      | Accuracy (training) | Accuracy (testing) |
 |------------------------------|---------------------|--------------------|
