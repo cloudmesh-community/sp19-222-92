@@ -10,76 +10,69 @@
 
 ## Abstract 
 
-This project will take Indiana University Women's soccer players data: how much
-distance they have sprinted, how fast they ran, total distance, number of
-accelerations, calories, and recovery time to determine their positions on the
-field. Typically, a goalie does not run very much, or have very much
-quantitative data from which predictions can be made, so the goalie position was
-removed from the dataset entirely. Based off the data set this AI will determine
-which position the player plays using the k-means machine learning method. The
-k-means machine learning algorithm will cluster data by separating it into
-groups of equal variances. This Machine Learning algorithm will work best for
-this because we are trying to group players based on their data to see what
-position they would actually be classified as. For example, we know that if a
-player has ran a certain speed over a certain distance then they most likely
-play that position. This algorithm can set the standard for what it takes to
-play each position. It would allow coaches and players both to use the given
-data to make improvements on the field.
+Data collected by wearbale devices used by the Indiana University Women's soccer
+team was used to classify the six unique offesive and defensive positions
+excluding the goaltender. Successful classification of positions from wearable
+data using machine learning techinques could provide talent evaluators and
+coaches with an extra tool to help increase on field productivity. The k-means
+algorithim was used in order to classifiy the data from wearble devices into six
+unique positions. This is the first step towards creating a workflow for using
+machine learning as a talent evalution tool for soccer players. Once the ability
+to successfully classify data from wearable devices into unique positions
+additional layers of complexity can be added, like comparing professional
+athletes or collegiate athletes to prospects. A framework for the implemtnation
+of classfiying soccer postions has been implemented with Scikit-learn libraries
+in python3. OpenAPI Specification was used in order to create a service that
+exploits the Scikit-learn libraries through an easy user interface.
 
 ## Introduction
 
-Can data gathered from athletic practices and games be used to create
-benchmarks for how an athlete playing a specific position should
-perform?  Recent advancements in different technologies have allowed
-us to use data from sensors to instantly improve how machines and
-people perform. These advancements are now being used in sports to
-make computations to player data to get future insight on how to
-improve the overall team. For example, the NFL uses data from top NFL
-players to make Machine Learning algorithms that can see which college
-players compare to the top NFL players. This type of algorithm can
-show users what datapoints are shared by top players, so that coaches
-can pick their players accordingly. Soccer uses sports data to improve
-the physical attributes, such as stamina and pace, of each individual
-player since it is a more technical sport that cannot just use
-quantitative data to make decisions. The field of sports analytics
-have been changed by machine learning techniques that have been
-adapted to use the hard numerical data received from edge-computing
-devices to improve teams.
+Can data gathered from athletic practices and games be used to create benchmarks
+for how an athlete playing a specific position should perform?  Recent
+advancements in wearable technologies has allowed data from sensors to instantly
+improve how machines and people perform. These advancements are now being used
+in sports to make computations to player data to get future insight on how to
+improve the overall team. For example, the popular movie Money Ball focused on
+how analytics can be used to assemble a competitve professional baseball
+team. This type of analysis can show users what datapoints are shared by top
+players allowing coaches to pick their players accordingly. Soccer uses sports
+data to improve the physical attributes, such as stamina and pace, of each
+individual player since it is a more technical sport that cannot just use
+quantitative data to make decisions. The field of sports analytics has been
+changed by machine learning techniques that have been adapted to use the hard
+numerical data received from edge-computing devices to improve teams.
 
 ### Sport Analytics 
 
-The rapid innovation of technology has infiltrated many fields
-including sports analytics because it has created more data which can
-show coaches what athletes need to improve on. Edge computing is the
-technology that has led to the massive increase in more refined sports
-data because of its ability to provide a real-time numerical
-representation of what happened on the field. With this numerical
-data, actions can be taken to rapidly improve each player specifically
-on the areas where they need immediate attention. Edge computing is
-computing that is done near the source of the data, and it uses the
-cloud's ability to compute from a remote source to get instant data
-from a device. Edge-computing has allowed sensors to get more accurate
-data without disturbing the players which has given many sports a new
-way to get an advantage over their competitors.
+The rapid innovation of technology has infiltrated many fields including sports
+analytics because it has created more data that can show coaches what athletes
+need to improve on. Edge computing is the technology that has led to the massive
+increase in more refined sports data because of its ability to provide a
+real-time numerical representation of what happened on the field. With this
+numerical data, actions can be taken to rapidly improve each player specifically
+on the areas where they need immediate attention. Edge computing is computing
+that is done near the source of the data, and it uses the cloud's ability to
+compute from a remote source to get instant data from a device. Edge-computing
+has allowed sensors to get more accurate data without disturbing the players
+which has given many sports a new way to get an advantage over their
+competitors.
 
 ### Sensors in Sports 
 
-Sensors have become more prominent in sports due to recent
-advancements in biomedical engineering which have made sensory
-technology better to create more informative data. These new
-innovations in sensory tech can now measure data points such as
-“temperature, oxygen saturation levels, and heart rate (SpO2) through
-photo optic sensors in wearable rings and wrist devices”@sensors_in_sports.  These new
-advancements are necessary because now, more than ever, “the
-differences between athletes are becoming more and more slight”@sensors_in_sports which
-has led coaches and trainers to look to data analytics to get an
-advantage. By putting small sensors into players’ training equipment,
-we can detect important aspects of playing a sport such as muscle
-exertion, heart rate, and respiration. Sensors can provide immediate
-feedback to the athletes. For example, when attached to player attire,
-“accelerometers and conductive materials can measure posture and
-provide real-time feedback to athletes so they can perfect their
-form.”@sensors_in_sports
+Sensors have become more prominent in sports due to recent advancements in
+biomedical engineering which have made sensory technology better to create more
+informative data. These new innovations in sensory technology can now measure
+data points such as “temperature, oxygen saturation levels, and heart rate
+(SpO2) through photo optic sensors in wearable rings and wrist
+devices”[@sensors_in_sports].  These new advancements are necessary because now,
+more than ever, “the differences between athletes are becoming more and more
+slight”[@sensors_in_sports] which has led coaches and trainers to look to data
+analytics to get an advantage. By putting small sensors into players’ training
+equipment, we can detect important aspects of playing a sport such as muscle
+exertion, heart rate, and respiration. Sensors can provide immediate feedback to
+the athletes. For example, when attached to player attire, “accelerometers and
+conductive materials can measure posture and provide real-time feedback to
+athletes so they can perfect their form”[@sensors_in_sports].
 
 Soccer has recently began to adopt the use of technology in many
 different ways such as the Adidas MiCoach ball, which is a regular
@@ -211,14 +204,14 @@ $$\sum_{j=1}^k\sum_{i=1}^n{\|x_{i}^{(j)} - c_j \|}^2$${#eq:obj-func}
 
 Before landing on K-means to be the machine learning algorithm, spectral
 clustering was the set machine learning algorithm for finding out how close
-people were playing against Indiana University womens soccer team. A commonly 
-used algorithm for classification that has become popular in recent years is 
-spectral clustering @von2007tutorial. This algorithm can be effectively solved by using standard linear
-algebra methods and, software. For the most part, it is known to outperform
-K-means which is what was seen with this data set. Spectral clustering uses the
-data points as nodes of a graph, which are then treated as partitioning points
-and mapped to a low-dimensional space making it easier to form
-clusters. Spectral clustering follows an approach where if the points are
+people were playing against Indiana University womens soccer team. A commonly
+used algorithm for classification that has become popular in recent years is
+spectral clustering [@von2007tutorial]. This algorithm can be effectively solved
+by using standard linear algebra methods and, software. For the most part, it is
+known to outperform K-means which is what was seen with this data set. Spectral
+clustering uses the data points as nodes of a graph, which are then treated as
+partitioning points and mapped to a low-dimensional space making it easier to
+form clusters. Spectral clustering follows an approach where if the points are
 extremely close to each other they are put into the same cluster, even if the
 distance between them is within a two point range if they are not connected they
 are not clustered. While k-means points can be within the same range and still
@@ -246,46 +239,53 @@ allowed the data set to be reduced to a certain number of random variables by
 obtaining a set of key variables. Looking at dimension reduction from the math
 perspective there are the non-linear and linear methods. Typically, the Linear 
 method is used because it is easier to implement. In the linear calculation 
-result in each variable being apart of a linear combination of the initial variables:
+results in each variable being apart of a linear combination of the initial variables:
 $k \geq p$
 
-S_i = w_ix_i + … w_ipxp for I = 1,…, k
+$$S_i = w_ix_i + … w_ipxp for I = 1,…, k$${eq:dim-red}
 
-S = Wx
-Wx represents the weighted matrix in linear conversion. Ap*k is the same as x =As 
-which are new variables or s identified as hidden or latent variables according to
-@fodor2002survey. When using the matrix x in terms of n x p the equations is 
+where
 
-S_ij = w_1jW_1j + … w1pXpJ for I =1…,k and j = 1…,n 
-According to @fodor2002survey this is the easiest linear technique to use.  
+$S = Wx$
+
+Wx represents the weighted matrix in linear conversion. $Ap*k$ is the same as $x
+=As$ which are new variables or $s$ identified as hidden or latent variables
+according to [@fodor2002survey]. When using the matrix $X$ in terms of $n x p$
+@eq:lin is applied.
+
+$$S_ij = w_1jW_1j + … w1pXpJ for I =1…,k and j = 1…,n$${eq:lin}
+
+According to @fodor2002survey this is the easiest linear technique to use. 
 
 
 ## Results
 
 Normally a clustering model cannot be scored for its accuracy; there are no true
 labels in unsupervised learning to compare with the clustering models predicted
-labels @k-means-clustering. However, in our case each of the fitness data points had the player name
-associated with it, so we were able to replace each name in the dataset with
-their position on the field (the predicted value). Converting these positions to
-numeric representations gave us a list of true labels to use for scoring. We
-found each players position by taking the position listed on the team roster
-page. Of course, some players may play in different positions throughout the
-season, so some of the labels may be incorrect. Our labelling process was the
-best we could do with the information available. We focused on three evaluations
-for our model: completeness, homogeneity, and v-measure. Completeness is a
-measure of how well each class was clustered together @scikit-completeness, while homogeneity scores
-the clusters based on what degree in contains only one class @scikit-homogeneity. The harmonic mean
-of the completeness and homogeneity scores gives the v-measure score @wikipedia_2019-harmonic-mean @scikit-vmeasure. Each is
-considered perfect if their score is 1.0. Conversely, 0.0 is the worst possible
-score. The results of our clustering model can be seen in
-@tbl:results-table. had a completeness score of .260, homogeneity score of .227,
-and a v-measure score of .242. This means our model was more effective at
-clustering the classes together than having each cluster contain purely one
-class. Overall, the model scored poorly. Its scatter plot @kaggle:
+labels [@k-means-clustering]. However, in our case each of the fitness data points
+had the player name associated with it, so we were able to replace each name in
+the dataset with their position on the field (the predicted value). Converting
+these positions to numeric representations gave us a list of true labels to use
+for scoring. We found each players position by taking the position listed on the
+team roster page. Of course, some players may play in different positions
+throughout the season, so some of the labels may be incorrect. Our labelling
+process was the best we could do with the information available. We focused on
+three evaluations for our model: completeness, homogeneity, and
+v-measure. Completeness is a measure of how well each class was clustered
+together [@scikit-completeness], while homogeneity scores the clusters based on
+what degree in contains only one class [@scikit-homogeneity]. The harmonic mean of
+the completeness and homogeneity scores gives the v-measure score
+[@wikipedia_2019-harmonic-mean] [@scikit-vmeasure]. Each is considered perfect if
+their score is 1.0. Conversely, 0.0 is the worst possible score. The results of
+our clustering model can be seen in @tbl:results-table. had a completeness score
+of .260, homogeneity score of .227, and a v-measure score of .242. This means
+our model was more effective at clustering the classes together than having each
+cluster contain purely one class. Overall, the model scored poorly. Its scatter
+plot [@kaggle]:
 
 Results of clustering: :o: not following image standrads
 
-![Clustering scatter plot](images/cluster_plot.png)
+![Clustering scatter plot](images/cluster_plot.png){#fig:scatter}
 
 
 Looking at the scatter plot showing the clusters and the data points true
@@ -296,20 +296,25 @@ scatter plot without the any forward data points makes it even more apparent.
 
 Clustering results, forwards not displayed: :o: not following image standrads
   
-![Clustering scatter plot](images/cluster_plot_no_forwards.png)
+![Clustering scatter plot](images/cluster_plot_no_forwards.png){#fig:no-forward}
 
 
-The black cluster was split almost 50/50 between forwards and midfielders despite them being decently separated groups, mainly because the model identified the outliers of the dataset as the red cluster. It's possible that if the dataset was cleaned up by removing the outliers before clustering, the model would've separated the classes much more accurately. Outliers as defined by our boxplot are shown here @nishida_nishida_2018 @seif_2018: 
+The black cluster was split almost 50/50 between forwards and midfielders
+despite them being decently separated groups, mainly because the model
+identified the outliers of the dataset as the red cluster. It's possible that if
+the dataset was cleaned up by removing the outliers before clustering, the model
+would've separated the classes much more accurately. Outliers as defined by our
+boxplot are shown here [@nishida_nishida_2018] [@seif_2018]:
  
- graph below is a Boxplot of data after normlization :o: not following image standrads, uses word below
+A Boxplot of the data after normlization is given in @fig:boxplot.
   
-![Boxplot after normalization](images/boxplots.pdf)
+![Boxplot after normalization](images/boxplots.png){#fig:boxplot}
 
 
 Our method for removing the outliers could have involved calculating a Z-Score
 for each data point, which gives the amount of standard deviations a point is
 from the mean of the dataset, and then getting rid of points with a Z-Score
-above a certain amount of standard deviations @sharma_sharma_2018. However, it's important to
+above a certain amount of standard deviations [@sharma_sharma_2018]. However, it's important to
 determine if the points in that top-right cluster would even qualify as true
 outliers or if they are just points the clustering model is unable to
 predict. We might need to investigate those points in the original dataset to
@@ -336,44 +341,48 @@ of machine learning method, a general unpredictability of player position with
 the type of data given, or some other reason? To examine the second possibility
 (wrong method), we split up the data into training and testing using
 train_test_split from sklearn, and then we added a variety of other
-classification techniques to the project code @wikipedia_2019-multiclass. The first technique was
-Multinomial Logistic Regression, a method that uses a linear combination of the
-predictor variables to model the dependent variable (position) @abhishekabhishek. The model had an
-accuracy score of .63 for our training data and .60 for our test data. The next
-technique we employed was a Decision Tree Classifier, which handles multi-class
-predictions naturally. Decision trees use the observed variables from the
-dataset to make choices (branches of the tree), leading to a conclusion about
-the predicted value (leaves of the tree) @wikipedia_2019-tree. We gave our decision tree a max depth
-of eight as its only parameter. It had an accuracy score of .80 for the training
-data and .65 for the test data. Next, our K-Nearest Neighbors Classification
-model functions by taking a vote of the points around the point to be classified
-and assigning the point whichever class that had the most votes @wikipedia_2019-knn. The number of
-neighbors used can be specified in the function call, and we found eight
-neighbors worked best. Our k-NN model had an accuracy score of .76 for the
-training data and .74 for the test data. We have a Linear Discriminant Analysis
-classifier as well, with the number of components set at two @multiclass-linear-discriminant-analysis @wikipedia_2019-lda. Its accuracy score
-was .69 for the training data and .60 for the test data. We also had a Gaussian
-Naïve Bayes classifier despite the fact that our data doesn't have features that
-can be considered independent, but it still serves the purpose of comparison to
-the clustering model @machine_learning_mastery_2016 @scikit-naive-bayes @scikit-gaussiannb. Its accuracy score was .73 for the training data and .63
-for the test data. Finally, we had an SVM classifier added to our project code,
-another method better suited for just two classes but used anyway @apache_ignite_documentation @scikit-svc. Our SVM model
-had an accuracy score of .58 for the training data and .63 for the test data.
-Overall, the highest scoring model for the test data was K-Nearest Neighbors,
-yet its .74 score for the test data still was not very high. It is difficult to
-make a direct comparison between the k-NN model and our original clustering
-model for multiple reasons. Their scores don't really represent the same idea,
-as accuracy isn't well defined when it comes to clustering. Clustering is more
-generic than k-NN classification too, because its goal isn't to predict classes
-for each individual data point. Instead, the goal of clustering is to group the
-data into distinct sets and see how these sets align with real-world observation
-and truth. Failed clustering (or poor clustering in our case) means our dataset
+classification techniques to the project code [@wikipedia_2019-multiclass]. The
+first technique was Multinomial Logistic Regression, a method that uses a linear
+combination of the predictor variables to model the dependent variable
+(position) [@abhishekabhishek]. The model had an accuracy score of .63 for our
+training data and .60 for our test data. The next technique we employed was a
+Decision Tree Classifier, which handles multi-class predictions
+naturally. Decision trees use the observed variables from the dataset to make
+choices (branches of the tree), leading to a conclusion about the predicted
+value (leaves of the tree) [@wikipedia_2019-tree]. We gave our decision tree a max
+depth of eight as its only parameter. It had an accuracy score of .80 for the
+training data and .65 for the test data. Next, our K-Nearest Neighbors
+Classification model functions by taking a vote of the points around the point
+to be classified and assigning the point whichever class that had the most votes
+[@wikipedia_2019-knn]. The number of neighbors used can be specified in the
+function call, and we found eight neighbors worked best. Our k-NN model had an
+accuracy score of .76 for the training data and .74 for the test data. We have a
+Linear Discriminant Analysis classifier as well, with the number of components
+set at two [@multiclass-linear-discriminant-analysis] [@wikipedia_2019-lda]. Its
+accuracy score was .69 for the training data and .60 for the test data. We also
+had a Gaussian Naïve Bayes classifier despite the fact that our data doesn't
+have features that can be considered independent, but it still serves the
+purpose of comparison to the clustering model [@machine_learning_mastery_2016]
+[@scikit-naive-bayes] [@scikit-gaussiannb]. Its accuracy score was .73 for the
+training data and .63 for the test data. Finally, we had an SVM classifier added
+to our project code, another method better suited for just two classes but used
+anyway [@apache_ignite_documentation] [@scikit-svc]. Our SVM model had an accuracy
+score of .58 for the training data and .63 for the test data.  Overall, the
+highest scoring model for the test data was K-Nearest Neighbors, yet its .74
+score for the test data still was not very high. It is difficult to make a
+direct comparison between the k-NN model and our original clustering model for
+multiple reasons. Their scores don't really represent the same idea, as accuracy
+isn't well defined when it comes to clustering. Clustering is more generic than
+k-NN classification too, because its goal isn't to predict classes for each
+individual data point. Instead, the goal of clustering is to group the data into
+distinct sets and see how these sets align with real-world observation and
+truth. Failed clustering (or poor clustering in our case) means our dataset
 couldn't fully differentiate positions with the variables measured. An aspect
 sorely needed to further separate the classes would be GPS data to find the
 average location on the field for each player, or a heat map of their movement
 throughout the game.
 
-Machine Learning table below
+: Machine Learning Table of Reults {tbl:ml-results}
 
 | Machine Learning Method      | Accuracy (training) | Accuracy (testing) |
 |------------------------------|---------------------|--------------------|
