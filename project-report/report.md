@@ -4,21 +4,11 @@
 
 :o: your .bib is full where are the intext citations ????? You shouldnt have a bib entry unless it is cited in text. This is easy just use @tag-name. 
 
-:warning: fix copy paste errors. 
-
-:wave: As is this paper is full of plagiarizm and must be returned so the authors fix it. Any time you use " .... " it must be followed with a citation or that quotes. Please make sure you have taken the IU plgiarizm certificat, or looked at the material we provide! questionable sentences are marked with :o:
-
-:wave: if you want to highlightthings that is not done with quotes but in *italic* . questionable words are marked with :o:
-
 :wave: increase tickmarks in plts so we can distinguish them, they are at this time unreadable
 
 :wave: This paper is very difficult to read due to its dense descriptions that do not explain things at times as easy as it could be. For example the explanation of tehe kmeans couold be simplified if you describe it in mathematical terms. But instead you do this at the end, confusing the reader
 
 :wave: add your images and references 
-
-:wave: Overal you are well on your way but proof read proof read proof read! Careful when you copy and paste, avoid jargon be direct. 
-
-:o: basepath in yaml file not in cloudmesh domain, also project x is not a semantically meaningful name for a service
 
 | Jesus Badillo, Xandria McDowell, Ben Yeagley 
 | jebadi@iu.edu, xmcdowel@iu.edu, byeagley@indiana.edu
