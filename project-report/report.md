@@ -293,9 +293,9 @@ and a v-measure score of .242. This means our model was more effective at
 clustering the classes together than having each cluster contain purely one
 class. Overall, the model scored poorly. Its scatter plot @kaggle:
 
+  Results of clustering:
 ![Clustering scatter plot](images/cluster_plot.png)
 
-:o: label missing
 
 Looking at the scatter plot showing the clusters and the data points true
 labels, we can see that the poor score can be mainly attributed to the general
@@ -303,16 +303,14 @@ failure to classify forwards (x's) correctly. The defenders (dots) and
 midfielders (triangles) have fairly defined clusters themselves, and viewing the
 scatter plot without the any forward data points makes it even more apparent.
 
+  Clustering results, forwards not displayed:
 ![Clustering scatter plot](images/cluster_plot_no_forwards.png)
 
-:o: label missing
 
 The black cluster was split almost 50/50 between forwards and midfielders despite them being decently separated groups, mainly because the model identified the outliers of the dataset as the red cluster. It's possible that if the dataset was cleaned up by removing the outliers before clustering, the model would've separated the classes much more accurately. Outliers as defined by our boxplot are shown here @nishida_nishida_2018 @seif_2018: 
  
  	graph below is a Boxplot of data after normlization
 ![Boxplot after normalization](images/boxplots.pdf)
-
-:o: label missing
 
 :o: pdf images not allowed convert to png
 
@@ -337,13 +335,6 @@ may not be the right choice.
 | 0.260        | 0.227       | 0.242   |
 
 
-:warning: please do not copy and paste from word or anything microsoft it bring in garbage please proof read and remove things like this &#39;accuracy&#39; isn&#39;t. I have deleted several of them but several still persist. 
-
-:wave: use boxplots to discuss outliers they are easy and get the job done. 
-
-:wave: avoid terms like left, right, above and below, we should represent the figures directly.
-
-:wave: would more data help on your analysis?
 
 ## Analysis
 
@@ -402,7 +393,7 @@ Machine Learning table below
 | SVM                          | .58                 | .63                |
 
 
-:o: caotion missing, captions are above table
+
 
 ## Specification
 
