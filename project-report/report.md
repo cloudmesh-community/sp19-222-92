@@ -1,15 +1,4 @@
 # Analysis of soccer data with kmeans
-
-:warning: in review
-
-:o: your .bib is full where are the intext citations ????? You shouldnt have a bib entry unless it is cited in text. This is easy just use @tag-name. 
-
-:wave: increase tickmarks in plts so we can distinguish them, they are at this time unreadable
-
-:wave: This paper is very difficult to read due to its dense descriptions that do not explain things at times as easy as it could be. For example the explanation of tehe kmeans couold be simplified if you describe it in mathematical terms. But instead you do this at the end, confusing the reader
-
-:wave: add your images and references 
-
 | Jesus Badillo, Xandria McDowell, Ben Yeagley 
 | jebadi@iu.edu, xmcdowel@iu.edu, byeagley@indiana.edu
 | Indiana University, Example University
@@ -312,7 +301,6 @@ The black cluster was split almost 50/50 between forwards and midfielders despit
  	graph below is a Boxplot of data after normlization
 ![Boxplot after normalization](images/boxplots.pdf)
 
-:o: pdf images not allowed convert to png
 
 Our method for removing the outliers could have involved calculating a Z-Score
 for each data point, which gives the amount of standard deviations a point is
