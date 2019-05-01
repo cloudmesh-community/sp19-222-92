@@ -253,7 +253,7 @@ Wx represents the weighted matrix in linear conversion. $Ap*k$ is the same as $x
 according to [@fodor2002survey]. When using the matrix $X$ in terms of $n x p$
 @eq:lin is applied.
 
-$$S_ij = w_1jW_1j + … w1pXpJ for I =1…,k and j = 1…,n$${eq:lin}
+$$S_ij = w_1jW_1j + … w1pXpJ for I =1…,k and j = 1…,n$${#eq:lin}
 
 According to @fodor2002survey this is the easiest linear technique to use. 
 
