@@ -1,4 +1,5 @@
 # Analysis of soccer data with kmeans
+
 | Jesus Badillo, Xandria McDowell, Ben Yeagley 
 | jebadi@iu.edu, xmcdowel@iu.edu, byeagley@indiana.edu
 | Indiana University Bloomingtion,
@@ -246,7 +247,7 @@ obtaining a set of key variables. Looking at dimension reduction from the math
 perspective there are the non-linear and linear methods. Typically, the Linear 
 method is used because it is easier to implement. In the linear calculation 
 result in each variable being apart of a linear combination of the initial variables:
-k \geq p
+$k \geq p$
 
 S_i = w_ix_i + … w_ipxp for I = 1,…, k
 
@@ -282,7 +283,8 @@ and a v-measure score of .242. This means our model was more effective at
 clustering the classes together than having each cluster contain purely one
 class. Overall, the model scored poorly. Its scatter plot @kaggle:
 
-  Results of clustering:
+Results of clustering: :o: not following image standrads
+
 ![Clustering scatter plot](images/cluster_plot.png)
 
 
@@ -292,13 +294,15 @@ failure to classify forwards (x's) correctly. The defenders (dots) and
 midfielders (triangles) have fairly defined clusters themselves, and viewing the
 scatter plot without the any forward data points makes it even more apparent.
 
-  Clustering results, forwards not displayed:
+Clustering results, forwards not displayed: :o: not following image standrads
+  
 ![Clustering scatter plot](images/cluster_plot_no_forwards.png)
 
 
 The black cluster was split almost 50/50 between forwards and midfielders despite them being decently separated groups, mainly because the model identified the outliers of the dataset as the red cluster. It's possible that if the dataset was cleaned up by removing the outliers before clustering, the model would've separated the classes much more accurately. Outliers as defined by our boxplot are shown here @nishida_nishida_2018 @seif_2018: 
  
- 	graph below is a Boxplot of data after normlization
+ graph below is a Boxplot of data after normlization :o: not following image standrads, uses word below
+  
 ![Boxplot after normalization](images/boxplots.pdf)
 
 
