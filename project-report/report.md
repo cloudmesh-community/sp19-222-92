@@ -239,10 +239,10 @@ allowed the data set to be reduced to a certain number of random variables by
 obtaining a set of key variables. Looking at dimension reduction from the math
 perspective there are the non-linear and linear methods. Typically, the Linear 
 method is used because it is easier to implement. In the linear calculation 
-results in each variable being apart of a linear combination of the initial variables:
-$k \geq p$
+results in each variable being apart of a linear combination of the initial
+variables such that $k \geq p$ see @eq:dim-red. 
 
-$$S_i = w_ix_i + … w_ipxp for I = 1,…, k$${eq:dim-red}
+$$S_i = w_ix_i + … w_ipxp for I = 1,…, k$${#eq:dim-red}
 
 where
 
