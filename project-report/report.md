@@ -382,7 +382,7 @@ sorely needed to further separate the classes would be GPS data to find the
 average location on the field for each player, or a heat map of their movement
 throughout the game.
 
-: Machine Learning Table of Reults {tbl:ml-results}
+: Machine Learning Table of Reults {#tbl:ml-results}
 
 | Machine Learning Method      | Accuracy (training) | Accuracy (testing) |
 |------------------------------|---------------------|--------------------|
