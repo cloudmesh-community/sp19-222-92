@@ -283,9 +283,7 @@ our model was more effective at clustering the classes together than having each
 cluster contain purely one class. Overall, the model scored poorly. Its scatter
 plot [@kaggle]:
 
-Results of clustering: :o: not following image standrads
-
-![Clustering scatter plot](images/cluster_plot.png){#fig:scatter}
+![Scatter plot of clustered results](images/cluster_plot.png){#fig:scatter}
 
 
 Looking at the scatter plot showing the clusters and the data points true
@@ -294,9 +292,7 @@ failure to classify forwards (x's) correctly. The defenders (dots) and
 midfielders (triangles) have fairly defined clusters themselves, and viewing the
 scatter plot without the any forward data points makes it even more apparent.
 
-Clustering results, forwards not displayed: :o: not following image standrads
-  
-![Clustering scatter plot](images/cluster_plot_no_forwards.png){#fig:no-forward}
+![Scatter plot clustered results without forwards](images/cluster_plot_no_forwards.png){#fig:no-forward}
 
 
 The black cluster was split almost 50/50 between forwards and midfielders
